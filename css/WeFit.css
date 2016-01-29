@@ -1,0 +1,28 @@
+.container {
+	text-align: center;
+	padding-bottom: 50px;
+
+}
+
+.progess {
+	text-align: center;
+}
+
+#name{
+	font-size: 50px;
+}
+.butts {
+	text-align: center;
+	position:fixed;
+   left:0px;
+   bottom:0px;
+   height:50px;
+   width:100%;
+   background:#999;
+}
+
+.jumbotron{
+	font-size: 40px;
+	color: red;
+	font-style: bold;
+}
