@@ -10,6 +10,7 @@
 
 #name{
 	font-size: 50px;
+
 }
 .butts {
 	text-align: center;
@@ -25,4 +26,25 @@
 	font-size: 40px;
 	color: red;
 	font-style: bold;
+}
+
+.body {
+	background: "images/lorempixel.abstract.1.jpeg";
+	width:100px;
+	height:100px;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed;
+}
+
+img {
+	width: 30%;
+	align: center;
+}
+
+progress {
+	border-radius: 5px;
 }
