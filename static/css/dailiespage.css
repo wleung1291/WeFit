@@ -1,35 +1,38 @@
+
+@import url(http://fonts.googleapis.com/css?family=Signika:600|Varela+Round);
+
 * {margin: 0; padding: 0;}
 
 div {
   margin: 20px;
 }
 
-ul {
+.dailies ul {
   list-style-type: none;
   width: 100%;
 }
 
 h3 {
-  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+  font: bold 20px/1.5;
   color: #F7F7F7;
 }
 
-li img {
+.dailies li img {
   float: left;
   margin: 0 15px 0 0;
 }
 
-li p {
-  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+.dailies li p {
+  font: 200 12px/1.5;
   color: #F7F7F7;
 }
 
-li {
+.dailies li {
   padding: 10px 0px;
   overflow: wrap;
 }
 
-li:hover {
+.dailies li:hover {
   background: #00a087;
   opacity: 0.7;
   cursor: pointer;
