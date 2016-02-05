@@ -20,15 +20,12 @@ h1, h2 {
 h1 {
   font-size: 36px;
   line-height: 46px;
-  color: white;
+  color: #F7F7F7;
 }
 h2 {
   font-size: 24px;
   line-height: 33px;
   margin-bottom: -20px;
-}
-p {
-  margin: 20px 0;
 }
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
@@ -41,6 +38,7 @@ a:link, a:visited, a:hover, a:active {
 
 .container {
   position: relative;
+  background: #464646 url(../images/paperplane.jpg) no-repeat center center fixed;
   background-size: cover;
   height:100%;
  }
