@@ -80,3 +80,10 @@ body {
 	text-align: left;
 	text-shadow: 2px 2px #00a087;
 }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
