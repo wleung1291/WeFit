@@ -14,13 +14,18 @@
    font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
 }
 
+body .sitename{
+  font: normal 18px/22px "Varela Round", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+ }
 
 body {
-  background: url(../images/paperplane.jpg) no-repeat center center fixed;
+  background: url(../images/paperplane.jpg) no-repeat center fixed;
   background-size: cover;
   height:100%;
-  font: normal 18px/22px "Varela Round", sans-serif;
- }
+}
+
 /** fonts used for the icons **/ 
 @font-face {
     font-family: 'FontomasCustomRegular';
