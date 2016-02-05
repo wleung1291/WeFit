@@ -6,57 +6,64 @@
 <!--<link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
   <link href="css/WeFit.css" rel="stylesheet">
-   
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/fixed-navigation-bar.css">
+  <link rel="shortcut icon" href="http://sixrevisions.com/favicon.ico">
 </head>
 <body>
-<!-- this is a comment in HTML -->
-<div class="container">
-	<div class="jumbotron">
-      <h1>WeFit</h1>
+  <nav class="fixed-nav-bar">
+    <div id="menu" class="menu">
+      <a class="sitename" href="index.html">We Fit</a>
+      <!-- Example responsive navigation menu  -->
+      <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+      <ul class="menu-items">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="#">Dailies</a></li>
+        <li><a href="#">Inventory</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="faq.html">Help</a></li>
+    </ul>
+    </div>
+  </nav>
+  <!-- this is a comment in HTML -->
+  <div class="container">
+    <div class = "profile">
+      <table align = "center">
+        <tr>  
+          <td align="center"><img src = "http://cdn.rsvlts.com/wp-content/uploads/2015/09/Arnold-Schwarzenegger-23.jpg"></td>
+          <td><p id = "name"> Arnold </br> Lvl 50 </p></td>
+        </tr>
+       </table>     
+    </div>
+    <hr>
+    <div class = "progress">
+      <table align="center">
+        <tr>
+          <td align="center" class="exerciseicon"><img src = "https://sportbay.nl/static/files/10/0/1000/Body_Coach_Dumbbell_set_10_kg.jpg"></td>  
+          <td><p>Curling -  Level 50</br> <progress value="50" min="0" max="100"><span>50<span>%</progress></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" class="exerciseicon"><img src = "http://ecx.images-amazon.com/images/I/81xZDLqQUEL._SL1500_.jpg"></td>  
+          <td ><p>Cardio - Level 40</br> <progress value="40" min="0" max="100">40%</progress></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" class="exerciseicon"><img src = "http://www.mxafitness.com/wp-content/uploads/2013/09/bench-press-equipment.jpg"></td>  
+          <td><p>Bench Press - Level 20 </br> <progress value="20" min="0" max="100">20%</progress></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" class="exerciseicon"><img src = "http://www.underwateraudio.com/wp-content/uploads/2015/03/33_ACPS_Atlanta_1996_Swimming_Jeff_Hardy.jpg"></td>  
+          <td><p>Swimming - Level 40</br> <progress value="40" min="0" max="100">40%</progress></p>
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
-
-  <div class = "profile">
-    <table align = "center">
-      <tr>  
-        <td align="center"><img src = "http://cdn.rsvlts.com/wp-content/uploads/2015/09/Arnold-Schwarzenegger-23.jpg"></td>
-        <td><p id = "name"> Arnold </br> Lvl 50 </p></td>
-      </tr>
-     </table>     
-  </div>
-  <hr>
-  <div class = "progress">
-    <table align="center">
-      <tr>
-        <td align="center" class="exerciseicon"><img src = "https://sportbay.nl/static/files/10/0/1000/Body_Coach_Dumbbell_set_10_kg.jpg"></td>  
-        <td><p>Curling -  Level 50</br> <progress value="50" min="0" max="100"><span>50<span>%</progress></p>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" class="exerciseicon"><img src = "http://ecx.images-amazon.com/images/I/81xZDLqQUEL._SL1500_.jpg"></td>  
-        <td ><p>Cardio - Level 40</br> <progress value="40" min="0" max="100">40%</progress></p>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" class="exerciseicon"><img src = "http://www.mxafitness.com/wp-content/uploads/2013/09/bench-press-equipment.jpg"></td>  
-        <td><p>Bench Press - Level 20 </br> <progress value="20" min="0" max="100">20%</progress></p>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" class="exerciseicon"><img src = "http://www.underwateraudio.com/wp-content/uploads/2015/03/33_ACPS_Atlanta_1996_Swimming_Jeff_Hardy.jpg"></td>  
-        <td><p>Swimming - Level 40</br> <progress value="40" min="0" max="100">40%</progress></p>
-        </td>
-      </tr>
-    </table>
-  </div>
-</div>
-<div class = "butts">
-  <button type="button" >Profile</button>
-  <button type="button" >Notifications</button>
-  <button type="button" >Store</button>
-  <button type="button" >Quest</button>
-  <button type="button" >World</button>
-  <a href="login.html">login </a> &nbsp
-  <a href="faq.html"> FAQ </a>
-</div>
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/mainmenu.js"></script>
 </body>
 </html>
