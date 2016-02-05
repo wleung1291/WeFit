@@ -1,85 +1,88 @@
-<html>
-<head>
-  <title>WeFit</title>  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--<link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
-  <link href="css/WeFit.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/fixed-navigation-bar.css">
-  <link rel="stylesheet" href="css/progress-bar.css">
+<!DOCTYPE html>
+<html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <link rel="stylesheet" type="text/css" href="css/loginStyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+        <link rel="stylesheet" href="css/fixed-navigation-bar.css" />
+    </head>
+    <body>
+        <nav class="fixed-nav-bar">
+            <div id="menu" class="menu">
+              <a class="sitename">WeFit</a>
+            </div>
+        </nav>
+        <div class="container">
 
-</head>
-<body>
-  <nav class="fixed-nav-bar">
-    <div id="menu" class="menu">
-      <a class="sitename" href="index.html">WeFit</a>
-      <!-- Example responsive navigation menu  -->
-      <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
-      <ul class="menu-items">
-        <li><a href="index.html">Profile</a></li>
-        <li><a href="dailies.html">Dailies</a></li>
-        <li><a href="inventory.html">Inventory</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="faq.html">Help</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- this is a comment in HTML -->
-  <div class="container">
-    <h1 align="center">Profile</h1>
-    <div class = "profile">
-      <table align = "center">
-        <tr>  
-          <td align="center"><img src = "http://cdn.rsvlts.com/wp-content/uploads/2015/09/Arnold-Schwarzenegger-23.jpg"></td>
-          <td><p id = "name"> Arnold </br> Lvl 50 </p></td>
-        </tr>
-       </table>     
-    </div>
-    <br>
-    <div class = "progress">
-      <table align="center">
-        <tr>
-          <td align="center" class="exerciseicon"><img src = "https://sportbay.nl/static/files/10/0/1000/Body_Coach_Dumbbell_set_10_kg.jpg"></td>  
-          <td class="lvl"><p>Curling - Level 50</br> <progress value="40" min="0" max="100"></progress></p>
-          </td>
-        </tr>
-        <tr>
-          <td align="center" class="exerciseicon"><img src = "http://www.runreviews.com/wp-content/uploads/2011/07/proform-pro-2500-treadmill.jpg"></td>  
-          <td class="lvl"><p>Cardio - Level 40</br> <progress value="40" min="0" max="100"></progress></p>
-          </td>
-        </tr>
-        <tr>
-          <td align="center" class="exerciseicon"><img src = "http://www.mxafitness.com/wp-content/uploads/2013/09/bench-press-equipment.jpg"></td>  
-          <td class="lvl"><p>Bench Press - Level 20 </br> <progress value="20" min="0" max="100"></progress></p>
-          </td>
-        </tr>
-        <tr>
-          <td align="center" class="exerciseicon"><img src = "http://www.underwateraudio.com/wp-content/uploads/2015/03/33_ACPS_Atlanta_1996_Swimming_Jeff_Hardy.jpg"></td>  
-          <td class="lvl"><p>Swimming - Level 40</br> <progress value="40" min="0" max="100"></progress></p>
-          </td>
-        </tr>
-        <tr>
-          <td align="center" class="exerciseicon"><img src = "http://www.underwateraudio.com/wp-content/uploads/2015/03/33_ACPS_Atlanta_1996_Swimming_Jeff_Hardy.jpg"></td>  
-          <td class="lvl"><p>Swimming - Level 40</br> <progress value="40" min="0" max="100"></progress></p>
-          </td>
-        </tr>
-        <tr>
-          <td align="center" class="exerciseicon"><img src = "http://www.underwateraudio.com/wp-content/uploads/2015/03/33_ACPS_Atlanta_1996_Swimming_Jeff_Hardy.jpg"></td>  
-          <td class="lvl"><p>Swimming - Level 40</br> <progress value="40" min="0" max="100"></progress></p>
-          </td>
-        </tr>
-        <tr>
-          <td align="center" class="exerciseicon"><img src = "http://www.underwateraudio.com/wp-content/uploads/2015/03/33_ACPS_Atlanta_1996_Swimming_Jeff_Hardy.jpg"></td>  
-          <td class="lvl"><p>Swimming - Level 40</br> <progress value="40" min="0" max="100">40%</progress></p>
-          </td>
-        </tr>
-      </table>
+            </header>
+            <section>               
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="profile.html" autocomplete="on"> 
+                                <h1>Log in</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > Your email or username </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                </p>
+                                <p class="keeplogin"> 
+                                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                                    <label for="loginkeeping">Keep me logged in</label>
+                                </p>
+                                <p class="login button"> 
+                                    <input type="submit" value="Login" />
+                                </p>
+                                <p class="change_link">
+                                    Not a member yet ?
+                                    <a href="#toregister" class="to_register">Join us</a>
+                                </p>
+                            </form>
+                        </div>
 
-    </div>
-  </div>
-  <script src="js/jquery-1.11.0.js"></script>
-  <script src="js/mainmenu.js"></script>
-</body>
+                        <div id="register" class="animate form">
+                            <form  action="#tologin" autocomplete="on"> 
+                                <h1> Sign up </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p class="signin button"> 
+                                    <input type="submit" value="Sign up"/> 
+                                </p>
+                                <p class="change_link">  
+                                    Already a member ?
+                                    <a href="#tologin" class="to_register"> Go and log in </a>
+                                </p>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </body>
 </html>
