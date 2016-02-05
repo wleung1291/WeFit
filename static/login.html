@@ -1,96 +1,89 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Login</title>    
-    
-    <link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,100,500'>
-<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto+Slab:400,700,300,100'>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login and Registration Form with HTML5 and CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/loginStyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    </head>
+    <body>
+        <div class="container">
 
-        <link rel="stylesheet" href="css/loginStyle.css">
-    
-  </head>
+            </header>
+            <section>               
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1>Log in</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > Your email or username </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                </p>
+                                <p class="keeplogin"> 
+                                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                                    <label for="loginkeeping">Keep me logged in</label>
+                                </p>
+                                <p class="login button"> 
+                                    <input type="submit" value="Login" /> 
+                                </p>
+                                <p class="change_link">
+                                    Not a member yet ?
+                                    <a href="#toregister" class="to_register">Join us</a>
+                                </p>
+                            </form>
+                        </div>
 
-  <body>
-
-    <div id="successful_login" class="fix-middle">
-  <div class="container text-center">
- 
-  </div>
-</div>
-<div id="successful_registration" class="fix-middle">
-  <div class="container text-center">
-    
-  </div>
-</div>
-
-<div id="dialog" class="dialog dialog-effect-in">
-  <div class="dialog-front">
-    <div class="dialog-content">
-      <form id="login_form" class="dialog-form" action="" method="POST">
-        <fieldset>
-          <legend>Log in</legend>
-          <div class="form-group">
-            <label for="user_username" class="control-label">Username:</label>
-            <input type="text" id="user_username" class="form-control" name="user_username" autofocus/>
-          </div>
-          <div class="form-group">
-            <label for="user_password" class="control-label">Password:</label>
-            <input type="password" id="user_password" class="form-control" name="user_password"/>
-          </div>
-          <div class="text-center pad-top-20">
-            <p>Have you forgotten your<br><a href="#" class="link"><strong>username</strong></a> or <a href="#" class="link"><strong>password</strong></a>?</p>
-          </div>
-          <div class="pad-top-20 pad-btm-20">
-            <input type="button" class="btn btn-default btn-block btn-lg" value="Continue" onclick="location.href='index.html';">
-          </div>
-          <div class="text-center">
-            <p>Do you wish to register<br> for <a href="#" class="link user-actions"><strong>a new account</strong></a>?</p>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-  <div class="dialog-back">
-    <div class="dialog-content">
-      <form id="register_form" class="dialog-form" action="" method="POST">
-        <fieldset>
-          <legend>Register</legend>
-          <div class="form-group">
-            <label for="user_username" class="control-label">Username:</label>
-            <input type="text" id="user_username" class="form-control" name="user_username"/> 
-          </div>
-          <div class="form-group">
-            <label for="user_password" class="control-label">Password:</label>
-            <input type="password" id="user_password" class="form-control" name="user_password"/>
-          </div>
-          <div class="form-group">
-            <label for="user_cnf_password" class="control-label">Confirm password:</label>
-            <input type="password" id="user_cnf_password" class="form-control" name="user_cnf_password"/>
-          </div>
-          <div class="form-group pad-top-20 form-group-checkbox">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" id="user_terms" name="user_terms">
-                I have read and I agree with the Terms and Conditions
-              </label>
-            </div>
-          </div>
-          <div class="pad-btm-20">
-            <input type="button" class="btn btn-default btn-block btn-lg" value="Continue" onclick="location.href='login.html';">
-          </div>
-          <div class="text-center">
-            <p>Return to <a href="#" class="link user-actions"><strong>log in page</strong></a>?</p>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-</div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-        <script src="js/login.js"></script>
-
-  </body>
+                        <div id="register" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1> Sign up </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p class="signin button"> 
+                                    <input type="submit" value="Sign up"/> 
+                                </p>
+                                <p class="change_link">  
+                                    Already a member ?
+                                    <a href="#tologin" class="to_register"> Go and log in </a>
+                                </p>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </body>
 </html>
