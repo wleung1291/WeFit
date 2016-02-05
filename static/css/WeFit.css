@@ -1,6 +1,6 @@
 .container {
 	text-align: center;
-	padding-bottom: 50px;
+	padding-top: 50px;
 
 }
 
@@ -8,43 +8,104 @@
 	text-align: center;
 }
 
-#name{
-	font-size: 50px;
-
-}
 .butts {
 	text-align: center;
 	position:fixed;
-   left:0px;
-   bottom:0px;
-   height:50px;
-   width:100%;
-   background:#999;
+	left:0px;
+	top:0px;
+	height:50px;
+	width:100%;
+	background:#999;
 }
 
 .jumbotron{
 	font-size: 40px;
 	color: red;
 	font-style: bold;
+	font-family: fantasy;
 }
 
-.body {
-	background: "images/lorempixel.abstract.1.jpeg";
-	width:100px;
-	height:100px;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
+.profile {
+	border: 5px;
+	border-style: solid;
+	border-radius: 25px;
+	background-color: white;
+}
+
+body {
+	background: url(https://d13pix9kaak6wt.cloudfront.net/background/users/a/l/e/alexcg_1423488682_58.jpg) no-repeat;
 	background-size: cover;
-	background-position: top center !important;
-	background-repeat: no-repeat !important;
-	background-attachment: fixed;
+}
+
+td {
+	border-radius: 25px;
+	white-space:nowrap;
+	width:50%;
+	height:50%;
+}
+
+td > p {
+	color: white;
+	font-size: 4.5vw;
+	text-align: center;
+}
+
+#name{
+	font-size: 40px;
+	text-align:center;
+	color:black;
+}
+
+p {
+	font-family:fantasy;
+}
+
+span {
+	color:white;
+	left: 50%;
 }
 
 img {
-	width: 30%;
-	align: center;
+	width:50%;
+}
+
+.exerciseicon {
+	border: 3px;
+	border-radius: 25px;
+	background-color: white;
 }
 
 progress {
-	border-radius: 5px;
+    height: 25px;
+    border-radius:10px;
+	background-image:
+	-webkit-linear-gradient(-45deg, 
+	                       transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                       rgba(0,0, 0, .1) 66%, transparent 66%),
+	-webkit-linear-gradient(top, 
+	                       rgba(255, 255, 255, .25), 
+	                       rgba(0, 0, 0, .25)),
+	-webkit-linear-gradient(left, #09c, #f44);
+}
+progress::-webkit-progress-bar {
+    height: 25px;
+    border-radius:10px;
+    background-color: black;
+}
+progress::-webkit-progress-value {
+    height: 25px;
+    border-radius:10px;
+	background-image:
+	-webkit-linear-gradient(-45deg, 
+	                       transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                       rgba(0, 0, 0, .1) 66%, transparent 66%),
+	-webkit-linear-gradient(top, 
+	                       rgba(255, 255, 255, .25), 
+	                       rgba(0, 0, 0, .25)),
+	-webkit-linear-gradient(left, #09c, #f44);
+}
+progress::-moz-progress-bar {
+    height: 25px;
+    border-radius:10px;
+    background-color: black;
 }
