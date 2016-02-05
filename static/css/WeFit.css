@@ -1,7 +1,3 @@
-.progess {
-	text-align: center;
-}
-
 .jumbotron{
 	font-size: 40px;
 	color: red;
@@ -17,9 +13,15 @@
 	background-color: #F7F7F7;
 }
 
+.profile img{
+	width:50%;
+	border-radius: 25px;
+}
+
 td {
 	border-radius: 25px;
-	white-space:nowrap;
+	border: 5px;
+	white-space: pre-wrap;
 	width:50%;
 	height:50%;
 }
@@ -27,70 +29,49 @@ td {
 td > p {
 	color: #F7F7F7;
 	font-size: 4.5vw;
-	text-align: center;
-	text-shadow: 1px 1px black;
+	text-align: left;
+	text-shadow: 2px 2px #00a087;
+	margin-top: 50px;
 }
 
 #name{
-	font-size: 40px;
+	font-size: 10vw;
 	text-align:center;
-	color:black;
+	color:#00a087;
+	text-shadow: none;
 }
 
 p {
-	font-family:fantasy;
+	font-family: "Signika", sans-serif;
+	font-weight: 700;
 }
 
-img {
-	width:50%;
-}
-
-.exerciseicon {
+.exerciseicon img{
 	border: 3px;
 	border-radius: 25px;
-	background-color: white;
+	width: 60%;
 }
 
-progress {
-    height: 25px;
-    border-radius:25px;
-	background-image:
-	-webkit-linear-gradient(-45deg, 
-	                       transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                       rgba(0,0, 0, .1) 66%, transparent 66%),
-	-webkit-linear-gradient(top, 
-	                       rgba(255, 255, 255, .25), 
-	                       rgba(0, 0, 0, .25)),
-	-webkit-linear-gradient(left, #09c, #f44);
-}
-progress::-webkit-progress-bar {
-    height: 25px;
-    border-radius:25px;
-    background-color: black;
-}
-progress::-webkit-progress-value {
-    height: 25px;
-    border-radius:25px;
-	background-image:
-	-webkit-linear-gradient(-45deg, 
-	                       transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                       rgba(0, 0, 0, .1) 66%, transparent 66%),
-	-webkit-linear-gradient(top, 
-	                       rgba(255, 255, 255, .25), 
-	                       rgba(0, 0, 0, .25)),
-	-webkit-linear-gradient(left, #09c, #f44);
-}
-progress::-moz-progress-bar {
-    height: 25px;
-    border-radius:25px;
-    background-color: black;
-}
 
 .progess {
 	text-align: center;
+	border-radius: 25px;
+	color: #00a087;
+	width:85%;
+}
+
+progress::-webkit-progress-bar { 
+	color: #00a087; 
+	width:85%;
+}
+
+progress::-webkit-progress-value { 
+	color: #00a087; 
+	width:85%;
 }
 
 body {
-	background: url(https://d13pix9kaak6wt.cloudfront.net/background/users/a/l/e/alexcg_1423488682_58.jpg) no-repeat;
+	background: url(../images/paperplane.jpg) no-repeat;
 	background-size: cover;
+	background-attachment: fixed
 }

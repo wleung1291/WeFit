@@ -12,7 +12,8 @@
 /* The element at the top of the page right after the fixed navigation bar
    MUST have sufficient top margin or else it will be covered by the bar */
 .container {
-  padding-top: 75px;
+  padding-top: 55px;
+  margin: 0px 10px;
 }
 
 /* Example responsive navigation menu  */
