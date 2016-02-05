@@ -12,7 +12,7 @@
 /* The element at the top of the page right after the fixed navigation bar
    MUST have sufficient top margin or else it will be covered by the bar */
 .container {
-  margin-top: 50px;
+  padding-top: 75px;
 }
 
 /* Example responsive navigation menu  */
@@ -38,9 +38,11 @@
   display: inline-block;
   margin-right: 20px;
   margin-left: 10px;
+  font-size: 24px;
+  font-weight: 900;
 }
 a.sitename, a:visited.sitename {
-  color: #e0e0e0;
+  color: white;
 }
 .menu-items li {
   display: inline-block;

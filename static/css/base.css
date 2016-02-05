@@ -41,8 +41,9 @@ a:link, a:visited, a:hover, a:active {
 
 .container {
   position: relative;
-  background: #464646 url(../images/minimalistic-pattern-backgrounds-wallpaper-1.jpg) no-repeat center center fixed;
+  background: #464646 url(../images/paperplane.jpg) no-repeat center center fixed;
   background-size: cover;
+  height:100%;
  }
 .description, .some-related-articles {
   width: 90%;

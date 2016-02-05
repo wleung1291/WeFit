@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+@import url(http://fonts.googleapis.com/css?family=Signika:600|Varela+Round);
+
 .progess {
 	text-align: center;
 }
@@ -14,12 +15,8 @@
 	border: 5px;
 	border-style: solid;
 	border-radius: 25px;
-	background-color: white;
-}
-
-body {
-	background-color:white;
-	background-size: cover;
+	border-color: #00a087;
+	background-color: #F7F7F7;
 }
 
 td {
@@ -30,9 +27,10 @@ td {
 }
 
 td > p {
-	color: white;
+	color: #F7F7F7;
 	font-size: 4.5vw;
 	text-align: center;
+	text-shadow: 1px 1px black;
 }
 
 #name{
@@ -89,114 +87,12 @@ progress::-moz-progress-bar {
     border-radius:25px;
     background-color: black;
 }
-.container {
-	text-align: center;
-	padding-top: 50px;
-
-}
 
 .progess {
 	text-align: center;
-}
-
-.butts {
-	text-align: center;
-	position:fixed;
-	left:0px;
-	top:0px;
-	height:50px;
-	width:100%;
-	background:#999;
-}
-
-.jumbotron{
-	font-size: 40px;
-	color: red;
-	font-style: bold;
-	font-family: fantasy;
-}
-
-.profile {
-	border: 5px;
-	border-style: solid;
-	border-radius: 25px;
-	background-color: white;
 }
 
 body {
 	background: url(https://d13pix9kaak6wt.cloudfront.net/background/users/a/l/e/alexcg_1423488682_58.jpg) no-repeat;
 	background-size: cover;
-}
-
-td {
-	border-radius: 25px;
-	white-space:nowrap;
-	width:50%;
-	height:50%;
-}
-
-td > p {
-	color: white;
-	font-size: 4.5vw;
-	text-align: center;
-}
-
-#name{
-	font-size: 40px;
-	text-align:center;
-	color:black;
-}
-
-p {
-	font-family:fantasy;
-}
-
-span {
-	color:white;
-	left: 50%;
-}
-
-img {
-	width:50%;
-}
-
-.exerciseicon {
-	border: 3px;
-	border-radius: 25px;
-	background-color: white;
-}
-
-progress {
-    height: 25px;
-    border-radius:10px;
-	background-image:
-	-webkit-linear-gradient(-45deg, 
-	                       transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                       rgba(0,0, 0, .1) 66%, transparent 66%),
-	-webkit-linear-gradient(top, 
-	                       rgba(255, 255, 255, .25), 
-	                       rgba(0, 0, 0, .25)),
-	-webkit-linear-gradient(left, #09c, #f44);
-}
-progress::-webkit-progress-bar {
-    height: 25px;
-    border-radius:10px;
-    background-color: black;
-}
-progress::-webkit-progress-value {
-    height: 25px;
-    border-radius:10px;
-	background-image:
-	-webkit-linear-gradient(-45deg, 
-	                       transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                       rgba(0, 0, 0, .1) 66%, transparent 66%),
-	-webkit-linear-gradient(top, 
-	                       rgba(255, 255, 255, .25), 
-	                       rgba(0, 0, 0, .25)),
-	-webkit-linear-gradient(left, #09c, #f44);
-}
-progress::-moz-progress-bar {
-    height: 25px;
-    border-radius:10px;
-    background-color: black;
 }
