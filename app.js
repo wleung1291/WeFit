@@ -18,6 +18,7 @@ var dailies = require('./routes/dailies');
 var achievements = require('./routes/achievements');
 var homepage = require('./routes/homepage');
 var inventory = require('./routes/inventory');
+var login = require('./routes/login');
 
 var app = express();
 
@@ -47,12 +48,12 @@ if ('development' == app.get('env')) {
 // Example route
 // app.get('/users', user.list);
 //app.get('/palette', palette.randomPalette);
-app.get('/', faq.view);
+app.get('/', homepage.view);
 app.get('/faq', faq.view);
 app.get('/dailies', dailies.view);
 app.get('/achievements', achievements.view);
 app.get('/inventory', inventory.view);
-
+app.get('/login', login.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

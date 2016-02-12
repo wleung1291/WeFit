@@ -9,36 +9,30 @@
   <link href="/css/WeFit.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" type="text/css" href="/css/fixed-navigation-bar.css">
+  <link rel="stylesheet" href="/css/homepage.css">
 </head>
-<body>
+<body class="homepage">
   <nav class="fixed-nav-bar">
     <div id="menu" class="menu">
-      <a class="sitename" href="/profile">WeFit</a>
+      <a class="sitename" href="/">WeFit</a>
       <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
       <ul class="menu-items">
-        <li><a href="profile">Profile</a></li>
-        <li><a href="dailies">Dailies</a></li>
-        <li><a href="inventory">Inventory</a></li>
-        <li><a href="achievements">Achievements</a></li>
-        <li><a href="faq">Help</a></li>
+        <li><a href="login">Sign In</a></li>
+        <li><a href="login">Join Us!</a></li>
     </ul>
     </div>
   </nav>
   <div class="container">
-    <h1 align="center">Homepage</h1>
-
-    <!--<h3 align="center">How many daily challenges can I complete in a day?</h3>
-    <ul>
-      <li align="center"> You can complete as many available challenges in a day as you wish.</li>
-    </ul>
-    <br>
-    <h3 align="center">If I fail a daily challenge, can I take it again?</h3>
-    <ul>
-      <li align="center"> Yes, you may try the challenege until you complete it or until it expires.</li>
-    </ul> -->
+    <div class="title_container">
+    <h1 align="center" id="title">WeFit</h1>
+    <h2 class="subtitle" align="center">Work out in the comfort of your own home.</h2>
+    </div>
+    <div class="button_container" align="center">
+        <input type="submit" value="Sign In" onclick"location.href='login';"/>   
+        <input type="submit" value="Join Us!" onclick"location.href='login';"/> 
+    </div>
   </div>
   <script src="js/jquery-1.11.0.js"></script>
-    <script src="/js/bootstrap.js"></script> 
-
+  <script src="/js/bootstrap.js"></script> 
 </body>
 </html>

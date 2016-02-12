@@ -38,7 +38,6 @@ a:link, a:visited, a:hover, a:active {
 
 .container {
   position: relative;
-  background: url(../images/paperplane.jpg) no-repeat center center fixed;
   background-size: cover;
   height:100%;
  }
@@ -105,3 +104,4 @@ a:link, a:visited, a:hover, a:active {
   color: #ffffff;
   background-color: rgba(70, 70, 70, 0.9);
 }
+
