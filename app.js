@@ -13,12 +13,14 @@ var handlebars = require('express3-handlebars')
 // Example route
 // var user = require('./routes/user');
 //var palette = require('./routes/palette');
+
 var faq = require('./routes/faq');
 var dailies = require('./routes/dailies');
 var achievements = require('./routes/achievements');
 var homepage = require('./routes/homepage');
 var inventory = require('./routes/inventory');
 var login = require('./routes/login');
+var profile = require('./routes/profile');
 
 var app = express();
 
@@ -37,6 +39,7 @@ app.use(express.json());
 //app.use(app.router);
 app.use(express.static(path.join(__dirname, 'static')));
 
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
@@ -50,10 +53,12 @@ if ('development' == app.get('env')) {
 //app.get('/palette', palette.randomPalette);
 app.get('/', homepage.view);
 app.get('/faq', faq.view);
+app.get('/profile', profile.view);
 app.get('/dailies', dailies.view);
 app.get('/achievements', achievements.view);
 app.get('/inventory', inventory.view);
 app.get('/login', login.view);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

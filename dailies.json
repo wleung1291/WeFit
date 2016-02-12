@@ -28,7 +28,7 @@
 			"experience":"Leg Experience: +50 exp",
 			"Accept":"Accept",
 			"accept":"accept2",
-			"acceptfunc":"accept()2",
+			"acceptfunc":"accept2()",
 			"Decline":"Decline",
 			"bye":"bye2",
 			"decline":"decline2",

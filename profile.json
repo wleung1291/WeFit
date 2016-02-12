@@ -1,0 +1,36 @@
+{
+	"user": [
+		{
+			"userPic":"http://cdn.rsvlts.com/wp-content/uploads/2015/09/Arnold-Schwarzenegger-23.jpg",
+			"name":"Arnold",
+			"lvl": "50"
+		}
+	],
+	"section": [
+		{
+			"img": "https://sportbay.nl/static/files/10/0/1000/Body_Coach_Dumbbell_set_10_kg.jpg",
+			"exercise": "Curling",
+			"level":"50",
+			"experience": "90"
+		},
+		{
+			"img": "http://www.runreviews.com/wp-content/uploads/2011/07/proform-pro-2500-treadmill.jpg",
+			"exercise": "Cardio",
+			"level":"40",
+			"experience": "40"	
+		},
+		{
+			"img": "http://www.mxafitness.com/wp-content/uploads/2013/09/bench-press-equipment.jpg",
+			"exercise": "Bench Press",
+			"level":"50",
+			"experience": "40"
+		},
+		{
+			"img": "http://www.underwateraudio.com/wp-content/uploads/2015/03/33_ACPS_Atlanta_1996_Swimming_Jeff_Hardy.jpg",
+			"exercise": "Swimming",
+			"level":"40",
+			"experience": "40"
+		}
+	]
+}
+
