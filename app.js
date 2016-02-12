@@ -19,7 +19,7 @@ var dailies = require('./routes/dailies');
 var achievements = require('./routes/achievements');
 var homepage = require('./routes/homepage');
 var inventory = require('./routes/inventory');
-
+var profile = require('./routes/profile');
 
 var app = express();
 
@@ -53,6 +53,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', faq.view);
 app.get('/faq', faq.view);
+app.get('/profile', profile.view);
 app.get('/dailies', dailies.view);
 app.get('/achievements', achievements.view);
 app.get('/inventory', inventory.view);
