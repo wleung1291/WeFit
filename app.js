@@ -13,8 +13,12 @@ var handlebars = require('express3-handlebars')
 // Example route
 // var user = require('./routes/user');
 //var palette = require('./routes/palette');
-//var faq = require('./routes/faq');
+var faq = require('./routes/faq');
 var dailies = require('./routes/dailies');
+var achievements = require('./routes/achievements');
+var profile = require('./routes/profile');
+var homepage = require('./routes/homepage');
+var inventory = require('./routes/inventory');
 
 var app = express();
 
@@ -25,13 +29,13 @@ app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 //app.use(express.favicon());
 //app.use(express.logger('dev'));
-//app.use(express.json());
+app.use(express.json());
 //app.use(express.urlencoded());
 //app.use(express.methodOverride());
 //app.use(express.cookieParser('Intro HCI secret key'));
 //app.use(express.session());
 //app.use(app.router);
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'static')));
 
 // development only
 if ('development' == app.get('env')) {
@@ -44,8 +48,13 @@ if ('development' == app.get('env')) {
 // Example route
 // app.get('/users', user.list);
 //app.get('/palette', palette.randomPalette);
-//app.get('/', faq.view);
-app.get('/', dailies.view);
+app.get('/', faq.view);
+app.get('/faq', faq.view);
+app.get('/dailies', dailies.view);
+app.get('/achievements', achievements.view);
+app.get('/profile', profile.view);
+app.get('/inventory', inventory.view);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

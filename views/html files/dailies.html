@@ -1,0 +1,85 @@
+<html>
+<head>
+  <title>WeFit</title>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
+  <link href="css/WeFit.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/fixed-navigation-bar.css">
+  <link rel="stylesheet" href="css/progress-bar.css">
+  <link rel="stylesheet" href="css/dailiespage.css">
+</head>
+<body>
+  <nav class="fixed-nav-bar">
+    <div id="menu" class="menu">
+      <a class="sitename" href="profile.html">WeFit</a>
+      <!-- Example responsive navigation menu  -->
+      <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+      <ul class="menu-items">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="dailies.html">Dailies</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="faq.html">Help</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- this is a comment in HTML -->
+  <div class="container">
+    <h1 align="center">Dailies</h1>
+    <div class="dailies">
+      <ul >
+        <li id ="slide"  >
+          <img class="exericon" src="http://www.caloriesecrets.net/wp-content/uploads/2013/07/single-leg-exercises.gif"
+          >
+          <h3>Leg Circles</h3>
+          <p>Lie on your back with your arms by your sides, palm down. Point your left foot to the ceiling and rotate foot outward slightly. Trace a circle on the ceiling with your leg, making sure you keep your hips still and anchored to the floor but move your entire leg. </p>
+        </li>          
+        <div id="panel">
+          <p id = "info" >Complete: 5 sets of 30 reps <br>Leg Experience: +50 exp </p><br>
+          <input type="button" value = "Accept" id = "accept" onclick = "accept1()"></input>
+          <input type="button" value = "Decline" class = "bye" id = "decline" onclick="decline1()"></input>         
+        </div>
+         <hr>
+        <li id = "slide2">
+          <img class="exericon" src="http://www.caloriesecrets.net/wp-content/uploads/2013/07/lunge-walks.gif" >
+          <h3>Lunge Walks</h3>
+          <p>Start standing with your feet together about hip-width apart and keep your back straight.  Step forward into a lunge position with your thigh parallel to the floor, avoiding any tilting or swaying of the upper body and keeping your back braced and abdominal muscles engaged.</p>
+        </li>
+          <div id="panel2">
+            <p id = "info2" >Complete: 5 sets of 30 reps <br>Leg Experience: +50 exp </p><br>
+            <input type="button" value = "Accept" id = "accept2" onclick="accept2()"></input>
+            <input type="button" value = "Decline" class = "bye2" id = "decline2" onclick="decline2()"></input>          
+          </div>
+        <hr>
+        <li id = "slide3">
+          <img class="exericon" src="http://www.caloriesecrets.net/wp-content/uploads/2013/07/pistol-squat.gif" >
+          <h3>Pistol Squat</h3>
+          <p>Stand with feet hip-width apart with your elbows bent and hands formed into fists in front of your chest.  Lift your right foot a few inches making sure it is flexed.  Squat down, bending your left knee 90 degrees whilst lifting your other leg in front of you until it is level with your hips.</p>
+        </li>
+        <div id="panel3">
+          <p id = "info3" >Complete: 5 sets of 30 reps <br>Leg Experience: +50 exp </p><br>
+          <input type="button" value = "Accept" id = "accept3" onclick="accept3()"></input>
+          <input type="button" value = "Decline" class = "bye3" id = "decline3" onclick="decline3()"></input>          
+        </div>
+        <hr>
+        <li id = "slide4">
+          <img class="exericon" src="http://www.caloriesecrets.net/wp-content/uploads/2013/07/calf-raises.gif" >
+          <h3>Calf Raises</h3>
+          <p>Start about 12 inches away from a wall with your toes facing forward and place your hands on the wall in line with your shoulders.  Rise up slowly onto your toes, keeping your knees straight and avoiding rotating of the feet.  Your hands should also be used for support.  Hold this position for a couple of seconds then slowly lower your heels back to the floor.</p>
+        </li>
+        <div id="panel4">
+          <p id = "info4" >Complete: 5 sets of 30 reps <br>Leg Experience: +50 exp </p><br>
+          <input type="button" value = "Accept" id = "accept4" onclick="accept4()"></input>
+          <input type="button" value = "Decline" class = "bye4" id = "decline4" onclick = "decline4()"></input>          
+          </div>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/dailies.js"></script>
+</body>
+</html>
