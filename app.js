@@ -13,18 +13,14 @@ var handlebars = require('express3-handlebars')
 // Example route
 // var user = require('./routes/user');
 //var palette = require('./routes/palette');
-<<<<<<< HEAD
-//var faq = require('./routes/faq');
-//var dailies = require('./routes/dailies');
-var profile = require('./routes/profile');
-=======
+
 var faq = require('./routes/faq');
 var dailies = require('./routes/dailies');
 var achievements = require('./routes/achievements');
 var profile = require('./routes/profile');
 var homepage = require('./routes/homepage');
 var inventory = require('./routes/inventory');
->>>>>>> e35bdc03b502444777134bd3415b441a0ab0c700
+
 
 var app = express();
 
@@ -41,11 +37,8 @@ app.use(express.json());
 //app.use(express.cookieParser('Intro HCI secret key'));
 //app.use(express.session());
 //app.use(app.router);
-<<<<<<< HEAD
-//app.use(express.static(path.join(__dirname, 'static')));
-=======
 app.use(express.static(path.join(__dirname, 'static')));
->>>>>>> e35bdc03b502444777134bd3415b441a0ab0c700
+
 
 // development only
 if ('development' == app.get('env')) {
@@ -58,11 +51,7 @@ if ('development' == app.get('env')) {
 // Example route
 // app.get('/users', user.list);
 //app.get('/palette', palette.randomPalette);
-<<<<<<< HEAD
-app.get('/', profile.view)
-//app.get('/faq', faq.view);
-//app.get('/dailies', dailies.view);
-=======
+
 app.get('/', faq.view);
 app.get('/faq', faq.view);
 app.get('/dailies', dailies.view);
@@ -70,7 +59,7 @@ app.get('/achievements', achievements.view);
 app.get('/profile', profile.view);
 app.get('/inventory', inventory.view);
 
->>>>>>> e35bdc03b502444777134bd3415b441a0ab0c700
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
