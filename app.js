@@ -14,7 +14,8 @@ var handlebars = require('express3-handlebars')
 // var user = require('./routes/user');
 //var palette = require('./routes/palette');
 //var faq = require('./routes/faq');
-var dailies = require('./routes/dailies');
+//var dailies = require('./routes/dailies');
+var profile = require('./routes/profile');
 
 var app = express();
 
@@ -31,7 +32,7 @@ app.set('view engine', 'handlebars');
 //app.use(express.cookieParser('Intro HCI secret key'));
 //app.use(express.session());
 //app.use(app.router);
-//app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'static')));
 
 // development only
 if ('development' == app.get('env')) {
@@ -44,8 +45,9 @@ if ('development' == app.get('env')) {
 // Example route
 // app.get('/users', user.list);
 //app.get('/palette', palette.randomPalette);
-//app.get('/', faq.view);
-app.get('/', dailies.view);
+app.get('/', profile.view)
+//app.get('/faq', faq.view);
+//app.get('/dailies', dailies.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
