@@ -1,0 +1,58 @@
+<html>
+<head>
+  <title>WeFit</title>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
+  <link href="css/WeFit.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/fixed-navigation-bar.css">
+  <link rel="stylesheet" href="css/progress-bar.css">
+  <link rel="stylesheet" href="css/dailiespage.css">
+</head>
+<body>
+  <nav class="fixed-nav-bar">
+    <div id="menu" class="menu">
+      <a class="sitename" href="profile.html">WeFit</a>
+      <!-- Example responsive navigation menu  -->
+      <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+      <ul class="menu-items">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="dailies.html">Dailies</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="faq.html">Help</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- this is a comment in HTML -->
+  <div class="container">
+    <h1 align="center">Dailies</h1>
+    <div class="dailies">
+      
+      {{#each exercises}}
+      <ul>
+        <li id ="{{slide}}" >
+          <img class="exericon" src="{{image}}"
+          >
+          <h3>{{exercise}}</h3>
+          <p>{{description}} </p>
+        </li>          
+        <div id="{{panel}}">
+          <p id = "{{info}}"> {{set}} <br>{{experience}} </p><br>
+          <input type="button" value = "{{Accept}}" id = "{{accept}}" onclick = "{{acceptfunc}}"></input>
+          <input type="button" value = "{{Decline}}" class = "{{bye}}" id = "{{decline}}" onclick="{{declinefunc}}"></input>         
+        </div>
+         <hr>   
+      </ul>
+      {{/each}}
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/dailies.js"></script>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="/js/bootstrap.js"></script> 
+</body>
+</html>

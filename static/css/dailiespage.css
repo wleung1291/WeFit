@@ -24,7 +24,7 @@ h3 {
 
 .dailies li p {
   font: 200 12px/1.5;
-  color: #F7F7F7;
+  color: black;
 }
 
 .dailies li {
@@ -48,6 +48,56 @@ h3 {
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 0;
+  border: 0px;
   border-top: 1px solid #eeeeee;
+}
+
+/** dropdown panels **/
+#panel, #slide, 
+#panel2, #slide2, 
+#panel3, #slide3, 
+#panel4, #slide4 {
+  text-align: center;
+}
+#panel, #panel2, #panel3, #panel4 {
+  padding: 40px;
+  display: none;
+  background-color: #00a087;
+  border-radius:25px;
+}
+
+
+/**buttons**/
+#accept, #accept2, #accept3, #accept4{
+  background-color:#77b55a;
+  border-radius:4px;
+  border:1px solid #ffffff;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:6px 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+#decline, #decline2, #decline3, #decline4{
+  background-color:#e4685d;
+  border-radius:4px;
+  border:1px solid #ffffff;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:6px 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+
+#accept:hover {
+  background-color:green;
+}
+#decline:hover {
+  background-color: red;
 }

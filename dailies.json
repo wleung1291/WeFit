@@ -1,0 +1,73 @@
+{
+	"exercises": [
+		{
+			"slide": "slide",
+			"image": "http://www.caloriesecrets.net/wp-content/uploads/2013/07/single-leg-exercises.gif",
+			"exercise": "Leg Circles",
+			"description":"Lie on your back with your arms by your sides, palm down. Point your left foot to the ceiling and rotate foot outward slightly. Trace a circle on the ceiling with your leg, making sure you keep your hips still and anchored to the floor but move your entire leg. ",
+			"panel":"panel",
+			"info":"info",
+			"set":"Complete: 5 sets of 30 reps",
+			"experience":"Leg Experience: +50 exp",
+			"Accept":"Accept",
+			"accept":"accept",
+			"acceptfunc":"accept1()",
+			"Decline":"Decline",
+			"bye":"bye",
+			"decline":"decline",
+			"declinefunc":"decline()"
+		},
+		{
+			"slide": "slide2",
+			"image": "http://www.caloriesecrets.net/wp-content/uploads/2013/07/lunge-walks.gif",
+			"exercise": "Lunge Walks",
+			"description":"Start standing with your feet together about hip-width apart and keep your back straight.  Step forward into a lunge position with your thigh parallel to the floor, avoiding any tilting or swaying of the upper body and keeping your back braced and abdominal muscles engaged.",
+			"panel":"panel2",
+			"info":"info2",
+			"set":"Complete: 5 sets of 30 reps",
+			"experience":"Leg Experience: +50 exp",
+			"Accept":"Accept",
+			"accept":"accept",
+			"acceptfunc":"accept()",
+			"Decline":"Decline",
+			"bye":"bye2",
+			"decline":"decline",
+			"declinefunc":"decline()"
+		},
+		{
+			"slide": "slide3",
+			"image": "http://www.caloriesecrets.net/wp-content/uploads/2013/07/single-leg-exercises.gif",
+			"exercise": "Leg Circles",
+			"description":"Lie on your back with your arms by your sides, palm down. Point your left foot to the ceiling and rotate foot outward slightly. Trace a circle on the ceiling with your leg, making sure you keep your hips still and anchored to the floor but move your entire leg. ",
+			"panel":"panel",
+			"info":"info",
+			"set":"Complete: 5 sets of 30 reps",
+			"experience":"Leg Experience: +50 exp",
+			"Accept":"Accept",
+			"accept":"accept",
+			"acceptfunc":"accept1()",
+			"Decline":"Decline",
+			"bye":"bye",
+			"decline":"decline",
+			"declinefunc":"decline()"
+		},
+		{
+			"slide": "slide4",
+			"image": "http://www.caloriesecrets.net/wp-content/uploads/2013/07/single-leg-exercises.gif",
+			"exercise": "Leg Circles",
+			"description":"Lie on your back with your arms by your sides, palm down. Point your left foot to the ceiling and rotate foot outward slightly. Trace a circle on the ceiling with your leg, making sure you keep your hips still and anchored to the floor but move your entire leg. ",
+			"panel":"panel",
+			"info":"info",
+			"set":"Complete: 5 sets of 30 reps",
+			"experience":"Leg Experience: +50 exp",
+			"Accept":"Accept",
+			"accept":"accept",
+			"acceptfunc":"accept1()",
+			"Decline":"Decline",
+			"bye":"bye",
+			"decline":"decline",
+			"declinefunc":"decline()"
+		}
+	]
+}
+
