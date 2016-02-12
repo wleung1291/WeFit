@@ -16,7 +16,6 @@ var handlebars = require('express3-handlebars')
 var faq = require('./routes/faq');
 var dailies = require('./routes/dailies');
 var achievements = require('./routes/achievements');
-var profile = require('./routes/profile');
 var homepage = require('./routes/homepage');
 var inventory = require('./routes/inventory');
 
@@ -52,7 +51,6 @@ app.get('/', faq.view);
 app.get('/faq', faq.view);
 app.get('/dailies', dailies.view);
 app.get('/achievements', achievements.view);
-app.get('/profile', profile.view);
 app.get('/inventory', inventory.view);
 
 
