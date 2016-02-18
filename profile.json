@@ -8,26 +8,38 @@
 	],
 	"section": [
 		{
-			"img": "https://sportbay.nl/static/files/10/0/1000/Body_Coach_Dumbbell_set_10_kg.jpg",
-			"exercise": "Curling",
+			"img": "http://shrani.si/f/3i/kB/4hPjiMY7/fd47cf329582b6e5da92b8cc.jpg",
+			"exercise": "Chest",
 			"level":"50",
 			"experience": "90"
 		},
 		{
-			"img": "http://www.runreviews.com/wp-content/uploads/2011/07/proform-pro-2500-treadmill.jpg",
-			"exercise": "Cardio",
+			"img": "http://supplements.bodybuildingtips-list.com/wp-content/uploads/2015/05/Bent-over-lateral-raise-shoulder-exercise.png",
+			"exercise": "Shoulders",
 			"level":"40",
 			"experience": "40"	
 		},
 		{
-			"img": "http://www.mxafitness.com/wp-content/uploads/2013/09/bench-press-equipment.jpg",
-			"exercise": "Bench Press",
+			"img": "https://lifefitnessbydane.files.wordpress.com/2014/06/shutterstock119687548copy.jpg",
+			"exercise": "Arms",
 			"level":"50",
 			"experience": "40"
 		},
 		{
-			"img": "http://www.underwateraudio.com/wp-content/uploads/2015/03/33_ACPS_Atlanta_1996_Swimming_Jeff_Hardy.jpg",
-			"exercise": "Swimming",
+			"img": "https://s-media-cache-ak0.pinimg.com/736x/e3/f6/3f/e3f63fb74c17024a8fa0071dd5036348.jpg",
+			"exercise": "Back",
+			"level":"40",
+			"experience": "40"
+		},
+		{
+			"img": "https://s-media-cache-ak0.pinimg.com/236x/52/3f/30/523f302698f28c2b30f4c48533223a9b.jpg",
+			"exercise": "Abdominal",
+			"level":"40",
+			"experience": "40"
+		},
+		{
+			"img": "http://peakfatlossandfitness.com/uploads/3/2/0/6/3206724/2573594_orig.jpg",
+			"exercise": "Legs",
 			"level":"40",
 			"experience": "40"
 		}
