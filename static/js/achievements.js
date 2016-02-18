@@ -28,7 +28,6 @@ var count = 0;
       $('#a2').css('color','green');
       count = 2
       $('#bye2').hide();
-
     }
 
     function done3(){
