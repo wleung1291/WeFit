@@ -1,21 +1,23 @@
+
 // change text after clicking accept 
 function accept1(){
     var elem = document.getElementById("accept");
     if (elem.value=="Accept") elem.value = "Click to finish!";
     $(".bye").remove(); // remove decline 
-
      // click finish will change the info of <p>
      $("#accept").click(function(){
          $('p#info').text('Congrats, +50 Leg Experience points!')
-         if (elem.value=="Click to finish!"){     
+         if (elem.value=="Click to finish!"){ 
               elem.value = "Done!";
-              //$(".bye").remove(); // remove decline 
               $("#accept").click(function(){
                  $("#panel").slideUp("slow");
              });
          }
      });
 }
+
+
+
 function accept2(){
     var elem2 = document.getElementById("accept2");
     if (elem2.value=="Accept") elem2.value = "Click to finish!";

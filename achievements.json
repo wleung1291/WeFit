@@ -1,12 +1,22 @@
 {
-	"faq": [
+	"achievement": [
 		{
-			"question": "How many daily challenges can I complete in a day?",
-			"answer": "You can complete as many available challenges in a day as you wish."
+			"number": "1",
+			"description": "Complete one daily challenge",
+			"bye": "bye1",
+			"donefunc": "done1()"
 		},
 		{
-			"question": "If I fail a daily challenge, can I take it again?",
-			"answer": "You can complete as many available challenges in a day as you wish."
+			"number": "2",
+			"description": "Complete two daily challenges",
+			"bye": "bye2",
+			"donefunc": "done2()"
+		},
+		{
+			"number": "3",
+			"description": "Complete at least one daily challenge each day for two days",
+			"bye": "bye3",
+			"donefunc": "done3()"
 		}
 	]
 }

@@ -9,6 +9,7 @@
   <link href="/css/WeFit.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" type="text/css" href="/css/fixed-navigation-bar.css">
+  <link  id= "default" rel="stylesheet" href="/css/achievements.css">
 </head>
 <body>
   <nav class="fixed-nav-bar">
@@ -26,10 +27,25 @@
   </nav>
   <div class="container">
     <h1 align="center">Achievements</h1>
+    <br>
 
+     {{#each achievement}}
+    <ul class = "list">
+      <li  align="center" id = "a{{number}}" > {{description}}
+        <button id ="{{bye}}" type ="button" onclick="{{donefunc}}">Finish Me!</button>
+      </li>
+      <br>
+    </ul>
+    {{/each}}
 
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/achievements.js"></script>
   <script src="js/jquery-1.11.0.js"></script>
   <script src="/js/bootstrap.js"></script> 
+
+
+
 </body>
 </html>
