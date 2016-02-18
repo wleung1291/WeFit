@@ -14,6 +14,16 @@ function accept1(){
              });
          }
      });
+     sessionStorage.accept1 = true;
+}
+if(sessionStorage.accept1){
+    $(".bye").hide();
+    var elem = document.getElementById("accept");
+    $('p#info').text('Congrats, +50 Leg Experience points!')
+    elem.value = "Done!";
+    $("#accept").click(function(){
+        $("#panel").slideUp("slow");
+    });
 }
 
 
@@ -33,7 +43,19 @@ function accept2(){
              });
          }
      });
+    sessionStorage.accept2 = true;
 }
+if(sessionStorage.accept2){
+    $(".bye2").hide();
+    var elem2 = document.getElementById("accept2");
+    $('p#info2').text('Congrats, +50 Leg Experience points!')
+    elem2.value = "Done!";
+    $("#accept2").click(function(){
+        $("#panel2").slideUp("slow");
+    });
+}
+
+
 function accept3(){
     var elem3 = document.getElementById("accept3");
     if (elem3.value=="Accept") elem3.value = "Click to finish!";
@@ -49,7 +71,18 @@ function accept3(){
              });
          }
      });
+     sessionStorage.accept3 = true;
 }
+if(sessionStorage.accept3){
+    $(".bye3").hide();
+    var elem3 = document.getElementById("accept3");
+    $('p#info3').text('Congrats, +50 Leg Experience points!')
+    elem3.value = "Done!";
+    $("#accept3").click(function(){
+        $("#panel3").slideUp("slow");
+    });
+}
+
 function accept4(){
     var elem4 = document.getElementById("accept4");
     if (elem4.value=="Accept") elem4.value = "Click to finish!";
@@ -65,8 +98,17 @@ function accept4(){
              });
          }
      });
+     sessionStorage.accept4 = true;
 }
-
+if(sessionStorage.accept4){
+    $(".bye4").hide();
+    var elem4 = document.getElementById("accept4");
+    $('p#info4').text('Congrats, +50 Leg Experience points!')
+    elem4.value = "Done!";
+    $("#accept4").click(function(){
+        $("#panel4").slideUp("slow");
+    });
+}
 
 /** slide up if press decline **/
 //function decline(){ 
