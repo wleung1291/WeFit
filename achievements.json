@@ -3,18 +3,21 @@
 		{
 			"number": "1",
 			"description": "Complete one daily challenge",
+			"button": "button1",
 			"bye": "bye1",
 			"donefunc": "done1()"
 		},
 		{
 			"number": "2",
 			"description": "Complete two daily challenges",
+			"button": "button2",
 			"bye": "bye2",
 			"donefunc": "done2()"
 		},
 		{
 			"number": "3",
 			"description": "Complete at least one daily challenge each day for two days",
+			"button": "button3",
 			"bye": "bye3",
 			"donefunc": "done3()"
 		}

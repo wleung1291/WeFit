@@ -32,7 +32,10 @@
      {{#each achievement}}
     <ul class = "list">
       <li  align="center" id = "a{{number}}" > {{description}}
-        <button id ="{{bye}}" type ="button" onclick="{{donefunc}}">Finish Me!</button>
+
+          <input id ="{{bye}}" type="image" name="submit" src="http://vignette1.wikia.nocookie.net/clubpenguin/images/5/5f/Red_X.png/revision/latest?cb=20120514130731" onclick="{{donefunc}}" width="25">
+          <!--<input id ="{{bye}}" value = "" type ="button" onclick="{{donefunc}}"></input>-->
+
       </li>
       <br>
     </ul>
@@ -42,6 +45,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/achievements.js"></script>
+  <script src="js/dailies.js"></script>
   <script src="js/jquery-1.11.0.js"></script>
   <script src="/js/bootstrap.js"></script> 
 

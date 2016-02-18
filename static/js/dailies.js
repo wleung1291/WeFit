@@ -5,18 +5,19 @@ function accept1(){
     if (elem.value=="Accept") elem.value = "Click to finish!";
     $(".bye").remove(); // remove decline 
      // click finish will change the info of <p>
-     $("#accept").click(function(){
-         $('p#info').text('Congrats, +50 Leg Experience points!')
-         if (elem.value=="Click to finish!"){ 
-              elem.value = "Done!";
-              $("#accept").click(function(){
-                 $("#panel").slideUp("slow");
-             });
-         }
-     });
-     sessionStorage.accept1 = true;
+    $("#accept").click(function(){
+        $('p#info').text('Congrats, +50 Leg Experience points!')
+        if (elem.value=="Click to finish!"){ 
+            elem.value = "Done!";
+            sessionStorage.accept1 = true;
+            $("#accept").click(function(){
+                $("#panel").slideUp("slow");
+            });
+        }
+    });
 }
 if(sessionStorage.accept1){
+          $('#a1').css('color','green');
     $(".bye").hide();
     var elem = document.getElementById("accept");
     $('p#info').text('Congrats, +50 Leg Experience points!')
@@ -34,16 +35,16 @@ function accept2(){
     $(".bye2").remove(); // remove decline 
 
      // click finish will change the info of <p>
-     $("#accept2").click(function(){
-         $('p#info2').text('Congrats, +50 Leg Experience points!')
-         if (elem2.value=="Click to finish!"){     
-              elem2.value = "Done!";
-              $("#accept2").click(function(){
-                 $("#panel2").slideUp("slow");
-             });
-         }
-     });
-    sessionStorage.accept2 = true;
+    $("#accept2").click(function(){
+        $('p#info2').text('Congrats, +50 Leg Experience points!')
+        if (elem2.value=="Click to finish!"){     
+            elem2.value = "Done!";
+            sessionStorage.accept2 = true;
+            $("#accept2").click(function(){
+                $("#panel2").slideUp("slow");
+            });
+        }
+    });
 }
 if(sessionStorage.accept2){
     $(".bye2").hide();
@@ -62,16 +63,16 @@ function accept3(){
     $(".bye3").remove(); // remove decline 
 
      // click finish will change the info of <p>
-     $("#accept3").click(function(){
-         $('p#info3').text('Congrats, +50 Leg Experience points!')
-         if (elem3.value=="Click to finish!"){     
-              elem3.value = "Done!";
-              $("#accept3").click(function(){
-                 $("#panel3").slideUp("slow");
-             });
-         }
-     });
-     sessionStorage.accept3 = true;
+    $("#accept3").click(function(){
+        $('p#info3').text('Congrats, +50 Leg Experience points!')
+        if (elem3.value=="Click to finish!"){     
+            elem3.value = "Done!";
+            sessionStorage.accept3 = true;
+            $("#accept3").click(function(){
+                $("#panel3").slideUp("slow");
+            });
+        }
+    });
 }
 if(sessionStorage.accept3){
     $(".bye3").hide();
@@ -89,16 +90,16 @@ function accept4(){
     $(".bye4").remove(); // remove decline 
 
      // click finish will change the info of <p>
-     $("#accept4").click(function(){
-         $('p#info4').text('Congrats, +50 Leg Experience points!')
-         if (elem4.value=="Click to finish!"){     
-              elem4.value = "Done!";
-              $("#accept4").click(function(){
-                 $("#panel4").slideUp("slow");
-             });
-         }
-     });
-     sessionStorage.accept4 = true;
+    $("#accept4").click(function(){
+        $('p#info4').text('Congrats, +50 Leg Experience points!')
+        if (elem4.value=="Click to finish!"){     
+            elem4.value = "Done!";
+            sessionStorage.accept4 = true;
+            $("#accept4").click(function(){
+                $("#panel4").slideUp("slow");
+            });
+        }
+    });
 }
 if(sessionStorage.accept4){
     $(".bye4").hide();
@@ -135,7 +136,7 @@ $(document).ready(function(){
         $("#panel").slideToggle("slow");
     });
     $("#slide2").click(function(){
-    	$("#panel2").slideToggle("slow");
+        $("#panel2").slideToggle("slow");
     });
     $("#slide3").click(function(){
         $("#panel3").slideToggle("slow");
@@ -144,5 +145,3 @@ $(document).ready(function(){
         $("#panel4").slideToggle("slow");
     });
 });
-
-

@@ -5,6 +5,7 @@
 #a1 {
 	color: red;
 	font-weight: bold;
+
 }
 
 #a2 {
@@ -17,3 +18,7 @@
 	color: red;	
 	font-weight: bold;
 }
+#bye1, #bye2, #bye3{
+	padding:1px;
+   border:1px solid #021a40;
+   }
