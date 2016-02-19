@@ -10,7 +10,7 @@ var count = 0;
     }
     if (sessionStorage.done1) {
       $('#a1').css('color','green');
-      var img1 = document.getElementById("icon");
+      var img1 = document.getElementById("icon1");
       img1.src="http://blueandgoldonline.org/wp/wp-content/uploads/2013/10/Sword.png";
       count = 1;
       $('#bye1').hide();
