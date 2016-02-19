@@ -95,7 +95,7 @@ if(sessionStorage.itemBreadUsed = true){
 
 function useItemBeet(){
 	if(!(document.getElementById("health").value>=100)){
-		$(".inventory-item.beet").removeClass('inventory-item beet');
+		$(".inventory-item.beet").hide();
 		if(document.getElementById("health").value >= 90){
 			document.getElementById("health").value = 100;
 		}
@@ -105,7 +105,7 @@ function useItemBeet(){
 }
 if(sessionStorage.itemBeetUsed = true){
 	console.log("Beet Eaten");
-	$(".inventory-item.beet").removeClass('inventory-item beet');	
+	$(".inventory-item.beet").hide();
 	if(document.getElementById("health").value >= 90){
 		document.getElementById("health").value = 100;
 	}
