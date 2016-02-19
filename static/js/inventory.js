@@ -26,7 +26,7 @@ function useItemCarrot(){
 		sessionStorage.itemCarrotUsed = true;
 	}
 }
-if(sessionStorage.itemCarrotUsed = true){
+if(sessionStorage.itemCarrotUsed){
 	console.log("Carrot Eaten");
 	$(".inventory-item.carrot").removeClass('inventory-item carrot');	
 	if(document.getElementById("health").value >= 90){
@@ -46,7 +46,7 @@ function useItemGreenApple(){
 		sessionStorage.itemGreenAppleUsed = true;	
 	}
 }
-if(sessionStorage.itemGreenAppleUsed = true){
+if(sessionStorage.itemGreenAppleUsed){
 	console.log("Green Apple Eaten");
 	$(".inventory-item.greenapple").removeClass('inventory-item greenapple');	
 	if(document.getElementById("health").value >= 90){
@@ -65,7 +65,7 @@ function useItemRedApple(){
 		sessionStorage.itemRedAppleUsed = true;
 	}
 }
-if(sessionStorage.itemRedAppleUsed = true){
+if(sessionStorage.itemRedAppleUsed){
 	console.log("Red Apple Eaten");
 	$(".inventory-item.redapple").removeClass('inventory-item redapple');	
 	if(document.getElementById("health").value >= 90){
@@ -84,7 +84,7 @@ function useItemBread(){
 		sessionStorage.itemBreadUsed = true;
 	}	
 }
-if(sessionStorage.itemBreadUsed = true){
+if(sessionStorage.itemBreadUsed){
 	console.log("Bread Eaten");
 	$(".inventory-item.bread").removeClass('inventory-item bread');	
 	if(document.getElementById("health").value >= 90){
@@ -103,7 +103,7 @@ function useItemBeet(){
 		sessionStorage.itemBeetUsed = true;
 	}
 }
-if(sessionStorage.itemBeetUsed = true){
+if(sessionStorage.itemBeetUsed){
 	console.log("Beet Eaten");
 	$(".inventory-item.beet").hide();
 	if(document.getElementById("health").value >= 90){
