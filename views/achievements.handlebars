@@ -9,6 +9,7 @@
   <link href="/css/WeFit.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" type="text/css" href="/css/fixed-navigation-bar.css">
+  <link  id= "default" rel="stylesheet" href="/css/achievements.css">
 </head>
 <body>
   <nav class="fixed-nav-bar">
@@ -26,9 +27,25 @@
   </nav>
   <div class="container">
     <h1 align="center">Achievements</h1>
+    <br>
 
+     {{#each achievement}}
+    <ul class = "list">
+      <li  align="center" id = "a{{number}}" > {{description}}
+
+          <input id ="{{bye}}" type="image" name="submit" src="http://vignette1.wikia.nocookie.net/clubpenguin/images/5/5f/Red_X.png/revision/latest?cb=20120514130731" onclick="{{donefunc}}" width="25">
+          <!--<input id ="{{bye}}" value = "" type ="button" onclick="{{donefunc}}"></input>-->
+
+      </li>
+      <br>
+    </ul>
+    {{/each}}
 
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/dailies.js"></script>
   <script src="js/jquery-1.11.0.js"></script>
   <script src="/js/bootstrap.js"></script> 
   <script>
