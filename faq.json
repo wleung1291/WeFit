@@ -7,11 +7,11 @@
 		{
 			"question": "If I fail a daily challenge, can I take it again?",
 			"answer": "Yes, you may accept a challenge until you finish it."
-		}
+		},
 		{
 			"question": "What are the achievements?",
 			"answer": "The achievements are goals we want the user to reach."
-		}
+		},
 		{
 			"question": "What is the inventory?",
 			"answer": "The inventory consists of items/avatars the user has earned from completing challenges."
