@@ -17,7 +17,7 @@ function accept1(){
     });
 }
 if(sessionStorage.accept1){
-          $('#a1').css('color','green');
+    //$('#a1').css('color','green');
     $(".bye").hide();
     var elem = document.getElementById("accept");
     $('p#info').text('Congrats, +50 Leg Experience points!')
