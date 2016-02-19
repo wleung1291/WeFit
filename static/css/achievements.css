@@ -8,6 +8,9 @@
 
 }
 
+#icon{
+	position: static;
+}
 
 #bye1, #bye2, #bye3{
 	padding:1px;
