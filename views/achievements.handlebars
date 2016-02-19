@@ -30,16 +30,25 @@
     <br>
 
      {{#each achievement}}
-    <ul class = "list">
-      
-      <li  align="center" id = "a{{number}}" > 
-        <img id="{{icon}}" src="http://t4.rbxcdn.com/2e8c272e87935c317273179bc5b5be53" height="50" width="50">{{description}}
-          <input id ="{{bye}}" type="image" name="submit" src="http://vignette1.wikia.nocookie.net/clubpenguin/images/5/5f/Red_X.png/revision/latest?cb=20120514130731" onclick="{{donefunc}}" width="25">
-          <!--<input id ="{{bye}}" value = "" type ="button" onclick="{{donefunc}}"></input>-->
 
-      </li>
-      <br>
-    </ul>
+    <!--<ul class = "list">
+      <tr>
+      <li  align="center" id = "a{{number}}" > -->
+      <table class = "list" align="center" id = "a{{number}}">
+        <tr>
+        <td id = "iconW"><img id="{{icon}}" src="http://t4.rbxcdn.com/2e8c272e87935c317273179bc5b5be53" height="100" width="100"></td>
+        <td id= "descrip">{{description}}</td>
+       
+        <td><input id ="{{bye}}" type="image" name="submit" src="http://vignette1.wikia.nocookie.net/clubpenguin/images/5/5f/Red_X.png/revision/latest?cb=20120514130731" onclick="{{donefunc}}" width="25"></td>
+        <br>
+      </tr>
+          <!--<input id ="{{bye}}" value = "" type ="button" onclick="{{donefunc}}"></input>-->
+      </table>
+    <!--  </li>
+    </tr>
+
+    </ul>-->
+
     {{/each}}
 
   </div>
