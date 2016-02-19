@@ -17,7 +17,7 @@ function initializePage() {
 }
 
 function useItemCarrot(){
-	if(!(document.getElementById("health").value >= 100)){
+	if(!(document.getElementById("health").value>=100)){
 		$(".inventory-item.carrot").removeClass('inventory-item carrot');
 		if(document.getElementById("health").value >= 90){
 			document.getElementById("health").value = 100;
@@ -37,7 +37,7 @@ if(sessionStorage.itemCarrotUsed = true){
 
 
 function useItemGreenApple(){
-	if(!(document.getElementById("health").value >= 100)){
+	if(!(document.getElementById("health").value>=100)){
 		$(".inventory-item.greenapple").removeClass('inventory-item greenapple');
 		if(document.getElementById("health").value >= 90){
 			document.getElementById("health").value = 100;
@@ -48,7 +48,7 @@ function useItemGreenApple(){
 }
 if(sessionStorage.itemGreenAppleUsed = true){
 	console.log("Green Apple Eaten");
-	$(".inventory-item.carrot").removeClass('inventory-item greenapple');	
+	$(".inventory-item.greenapple").removeClass('inventory-item greenapple');	
 	if(document.getElementById("health").value >= 90){
 		document.getElementById("health").value = 100;
 	}
@@ -56,7 +56,7 @@ if(sessionStorage.itemGreenAppleUsed = true){
 }
 
 function useItemRedApple(){
-	if(!(document.getElementById("health").value >= 100)){
+	if(!(document.getElementById("health").value>=100)){
 		$(".inventory-item.redapple").removeClass('inventory-item redapple');
 		if(document.getElementById("health").value >= 90){
 			document.getElementById("health").value = 100;
@@ -67,7 +67,7 @@ function useItemRedApple(){
 }
 if(sessionStorage.itemRedAppleUsed = true){
 	console.log("Red Apple Eaten");
-	$(".inventory-item.carrot").removeClass('inventory-item redapple');	
+	$(".inventory-item.redapple").removeClass('inventory-item redapple');	
 	if(document.getElementById("health").value >= 90){
 		document.getElementById("health").value = 100;
 	}
@@ -75,18 +75,18 @@ if(sessionStorage.itemRedAppleUsed = true){
 }
 
 function useItemBread(){
-	if(!(document.getElementById("health").value >= 100)){
+	if(!(document.getElementById("health").value>=100)){
 		$(".inventory-item.bread").removeClass('inventory-item bread');
 		if(document.getElementById("health").value >= 90){
 			document.getElementById("health").value = 100;
 		}
 		else{ document.getElementById("health").value += 10;}
 		sessionStorage.itemBreadUsed = true;
-	}
+	}	
 }
 if(sessionStorage.itemBreadUsed = true){
 	console.log("Bread Eaten");
-	$(".inventory-item.carrot").removeClass('inventory-item bread');	
+	$(".inventory-item.bread").removeClass('inventory-item bread');	
 	if(document.getElementById("health").value >= 90){
 		document.getElementById("health").value = 100;
 	}
@@ -94,7 +94,7 @@ if(sessionStorage.itemBreadUsed = true){
 }
 
 function useItemBeet(){
-	if(!(document.getElementById("health").value >= 100)){
+	if(!(document.getElementById("health").value>=100)){
 		$(".inventory-item.beet").removeClass('inventory-item beet');
 		if(document.getElementById("health").value >= 90){
 			document.getElementById("health").value = 100;
@@ -105,7 +105,7 @@ function useItemBeet(){
 }
 if(sessionStorage.itemBeetUsed = true){
 	console.log("Beet Eaten");
-	$(".inventory-item.carrot").removeClass('inventory-item beet');	
+	$(".inventory-item.beet").removeClass('inventory-item beet');	
 	if(document.getElementById("health").value >= 90){
 		document.getElementById("health").value = 100;
 	}
