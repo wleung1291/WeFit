@@ -17,14 +17,14 @@ function initializePage() {
 }
 
 function useItemCarrot(){
-	if(!document.getElementById("health").value >= 100){
-	$(".inventory-item.carrot").removeClass('inventory-item carrot');
-	if(document.getElementById("health").value >= 90){
-		document.getElementById("health").value = 100;
+	if(!(document.getElementById("health").value >= 100)){
+		$(".inventory-item.carrot").removeClass('inventory-item carrot');
+		if(document.getElementById("health").value >= 90){
+			document.getElementById("health").value = 100;
+		}
+		else{ document.getElementById("health").value += 10;}
+		sessionStorage.itemCarrotUsed = true;
 	}
-	else{ document.getElementById("health").value += 10;}
-	sessionStorage.itemCarrotUsed = true;
-}
 }
 if(sessionStorage.itemCarrotUsed = true){
 	console.log("Carrot Eaten");
@@ -37,14 +37,14 @@ if(sessionStorage.itemCarrotUsed = true){
 
 
 function useItemGreenApple(){
-	if(!document.getElementById("health").value >= 100){
-	$(".inventory-item.greenapple").removeClass('inventory-item greenapple');
-	if(document.getElementById("health").value >= 90){
-		document.getElementById("health").value = 100;
+	if(!(document.getElementById("health").value >= 100)){
+		$(".inventory-item.greenapple").removeClass('inventory-item greenapple');
+		if(document.getElementById("health").value >= 90){
+			document.getElementById("health").value = 100;
+		}
+		else{ document.getElementById("health").value += 10;}
+		sessionStorage.itemGreenAppleUsed = true;	
 	}
-	else{ document.getElementById("health").value += 10;}
-	sessionStorage.itemGreenAppleUsed = true;	
-}
 }
 if(sessionStorage.itemGreenAppleUsed = true){
 	console.log("Green Apple Eaten");
@@ -56,14 +56,14 @@ if(sessionStorage.itemGreenAppleUsed = true){
 }
 
 function useItemRedApple(){
-	if(!document.getElementById("health").value >= 100){
-	$(".inventory-item.redapple").removeClass('inventory-item redapple');
-	if(document.getElementById("health").value >= 90){
-		document.getElementById("health").value = 100;
+	if(!(document.getElementById("health").value >= 100)){
+		$(".inventory-item.redapple").removeClass('inventory-item redapple');
+		if(document.getElementById("health").value >= 90){
+			document.getElementById("health").value = 100;
+		}
+		else{ document.getElementById("health").value += 10;}
+		sessionStorage.itemRedAppleUsed = true;
 	}
-	else{ document.getElementById("health").value += 10;}
-	sessionStorage.itemRedAppleUsed = true;
-}
 }
 if(sessionStorage.itemRedAppleUsed = true){
 	console.log("Red Apple Eaten");
@@ -75,14 +75,14 @@ if(sessionStorage.itemRedAppleUsed = true){
 }
 
 function useItemBread(){
-	if(!document.getElementById("health").value >= 100){
-	$(".inventory-item.bread").removeClass('inventory-item bread');
-	if(document.getElementById("health").value >= 90){
-		document.getElementById("health").value = 100;
+	if(!(document.getElementById("health").value >= 100)){
+		$(".inventory-item.bread").removeClass('inventory-item bread');
+		if(document.getElementById("health").value >= 90){
+			document.getElementById("health").value = 100;
+		}
+		else{ document.getElementById("health").value += 10;}
+		sessionStorage.itemBreadUsed = true;
 	}
-	else{ document.getElementById("health").value += 10;}
-	sessionStorage.itemBreadUsed = true;
-}
 }
 if(sessionStorage.itemBreadUsed = true){
 	console.log("Bread Eaten");
@@ -94,14 +94,14 @@ if(sessionStorage.itemBreadUsed = true){
 }
 
 function useItemBeet(){
-	if(!document.getElementById("health").value >= 100){
-	$(".inventory-item.beet").removeClass('inventory-item beet');
-	if(document.getElementById("health").value >= 90){
-		document.getElementById("health").value = 100;
+	if(!(document.getElementById("health").value >= 100)){
+		$(".inventory-item.beet").removeClass('inventory-item beet');
+		if(document.getElementById("health").value >= 90){
+			document.getElementById("health").value = 100;
+		}
+		else{ document.getElementById("health").value += 10;}
+		sessionStorage.itemBeetUsed = true;
 	}
-	else{ document.getElementById("health").value += 10;}
-	sessionStorage.itemBeetUsed = true;
-}
 }
 if(sessionStorage.itemBeetUsed = true){
 	console.log("Beet Eaten");
