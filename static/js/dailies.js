@@ -12,6 +12,12 @@ function accept1(){
             sessionStorage.accept1 = true;
             $("#accept").click(function(){
                 $("#panel").slideUp("slow");
+                
+                //toggle arrow after clicking done
+                var _this = $("#togArr1");
+                var current = _this.attr("src");
+                var swap = _this.attr("src-swap");     
+                _this.attr('src', swap).attr("src-swap",current); 
             });
         }
     });
@@ -24,6 +30,12 @@ if(sessionStorage.accept1){
     elem.value = "Done!";
     $("#accept").click(function(){
         $("#panel").slideUp("slow");
+
+        //toggle arrow
+        var _this = $("#togArr1");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current); 
     });
 }
 
@@ -42,6 +54,10 @@ function accept2(){
             sessionStorage.accept2 = true;
             $("#accept2").click(function(){
                 $("#panel2").slideUp("slow");
+                var _this = $("#togArr2");
+                var current = _this.attr("src");
+                var swap = _this.attr("src-swap");     
+                _this.attr('src', swap).attr("src-swap",current); 
             });
         }
     });
@@ -53,6 +69,10 @@ if(sessionStorage.accept2){
     elem2.value = "Done!";
     $("#accept2").click(function(){
         $("#panel2").slideUp("slow");
+        var _this = $("#togArr2");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current); 
     });
 }
 
@@ -70,6 +90,10 @@ function accept3(){
             sessionStorage.accept3 = true;
             $("#accept3").click(function(){
                 $("#panel3").slideUp("slow");
+                var _this = $("#togArr3");
+                var current = _this.attr("src");
+                var swap = _this.attr("src-swap");     
+                _this.attr('src', swap).attr("src-swap",current);
             });
         }
     });
@@ -81,6 +105,10 @@ if(sessionStorage.accept3){
     elem3.value = "Done!";
     $("#accept3").click(function(){
         $("#panel3").slideUp("slow");
+        var _this = $("#togArr3");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current);
     });
 }
 
@@ -97,6 +125,10 @@ function accept4(){
             sessionStorage.accept4 = true;
             $("#accept4").click(function(){
                 $("#panel4").slideUp("slow");
+                var _this = $("#togArr4");
+                var current = _this.attr("src");
+                var swap = _this.attr("src-swap");     
+                _this.attr('src', swap).attr("src-swap",current);   
             });
         }
     });
@@ -108,6 +140,10 @@ if(sessionStorage.accept4){
     elem4.value = "Done!";
     $("#accept4").click(function(){
         $("#panel4").slideUp("slow");
+        var _this = $("#togArr4");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current);   
     });
 }
 
@@ -116,17 +152,32 @@ if(sessionStorage.accept4){
 $(document).ready(function(){
 
     $(".bye").click(function(){
-
         $("#panel").slideUp("slow");
+        var _this = $("#togArr1");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current);  
     });
     $(".bye2").click(function(){
         $("#panel2").slideUp("slow");
+        var _this = $("#togArr2");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current);
     });
     $(".bye3").click(function(){
         $("#panel3").slideUp("slow");
+        var _this = $("#togArr3");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current);
     });
     $(".bye4").click(function(){
         $("#panel4").slideUp("slow");
+        var _this = $("#togArr4");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current);
     });
 });
 
@@ -145,3 +196,32 @@ $(document).ready(function(){
         $("#panel4").slideToggle("slow");
     });
 });
+
+/** arrow toggle **/
+$(function (){
+    $("#slide").click(function() { 
+        var _this = $("#togArr1");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current);   
+    }); 
+    $("#slide2").click(function() { 
+        var _this = $("#togArr2");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current);   
+    }); 
+    $("#slide3").click(function() { 
+        var _this = $("#togArr3");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current);   
+    }); 
+    $("#slide4").click(function() { 
+        var _this = $("#togArr4");
+        var current = _this.attr("src");
+        var swap = _this.attr("src-swap");     
+        _this.attr('src', swap).attr("src-swap",current);   
+    }); 
+});
+

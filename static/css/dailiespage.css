@@ -32,14 +32,20 @@ h3 {
   overflow: wrap;
 }
 
-.dailies li:hover {
+/*.dailies li:hover {
+  background: #00a087;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius:25px;
+  padding: 10px;
+}*/
+.dailies li {
   background: #00a087;
   opacity: 0.7;
   cursor: pointer;
   border-radius:25px;
   padding: 10px;
 }
-
 .exericon {
   width:100px;
   height:100px;
@@ -51,6 +57,7 @@ hr {
   border: 0px;
   border-top: 1px solid #eeeeee;
 }
+
 
 /** dropdown panels **/
 #panel, #slide, 
@@ -100,4 +107,9 @@ hr {
 }
 #decline:hover {
   background-color: red;
+}
+
+#togArr1, #togArr2, 
+#togArr3, #togArr4{
+  padding-left: 50%;
 }
