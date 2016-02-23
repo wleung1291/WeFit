@@ -1,12 +1,19 @@
 {
-	"faq": [
+	"inventory": [
 		{
-			"question": "How many daily challenges can I complete in a day?",
-			"answer": "You can complete as many available challenges in a day as you wish."
+			"food":"carrot"
 		},
 		{
-			"question": "If I fail a daily challenge, can I take it again?",
-			"answer": "You can complete as many available challenges in a day as you wish."
+			"food":"greenapple"
+		},
+		{
+			"food":"redapple"
+		},
+		{
+			"food":"bread"
+		},
+		{
+			"food":"beet"
 		}
 	]
 }

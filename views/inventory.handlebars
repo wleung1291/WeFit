@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" type="text/css" href="/css/fixed-navigation-bar.css">
   <link rel="stylesheet" href="/css/inventory.css">
+  <link rel="stylesheet" href="/css/confirmbox.css">
 </head>
 <body>
   <nav class="fixed-nav-bar">
@@ -37,25 +38,71 @@
     </div>
     <div id="money">
     </div>
-    <div id="blanket" style="display:none"></div>
-    <div id="popUpDiv" style="display:none">
-    <a href="#" onclick="popup('popUpDiv')" >Click to Close CSS Pop Up</a>
-    </div>
     <div id="items">
       <div class="inventory-row">
         <div class="inventory-cell">
+          <div class="cd-popup" role="alert" id="popup1">
+            <div class="cd-popup-container">
+              <p>Are you sure you want to use this item1?</p>
+              <ul class="cd-buttons">
+                <li><a href="#0" id="yes1">Yes1</a></li>
+                <li><a href="#0" id="no1">No1</a></li>
+              </ul>
+              <a href="#0" class="cd-popup-close img-replace">Close</a>
+            </div> <!-- cd-popup-container -->
+          </div> <!-- cd-popup -->
           <div class="inventory-item carrot"></div>
         </div>
-        <div class="inventory-cell"> 
+        <div class="inventory-cell">
+            <div class="cd-popup" role="alert" id="popup2">
+            <div class="cd-popup-container">
+              <p>Are you sure you want to use this item2?</p>
+              <ul class="cd-buttons">
+                <li><a href="#0" id="yes2">Yes2</a></li>
+                <li><a href="#0" id="no2">No2</a></li>
+              </ul>
+              <a href="#0" class="cd-popup-close img-replace">Close</a>
+            </div> <!-- cd-popup-container -->
+          </div> <!-- cd-popup -->
           <div class="inventory-item greenapple"></div>
         </div>
         <div class="inventory-cell">
+          <div class="cd-popup" role="alert" id="popup3">
+            <div class="cd-popup-container">
+              <p>Are you sure you want to use this item3?</p>
+              <ul class="cd-buttons">
+                <li><a href="#0" id="yes3">Yes3</a></li>
+                <li><a href="#0" id="no3">No3</a></li>
+              </ul>
+              <a href="#0" class="cd-popup-close img-replace">Close</a>
+            </div> <!-- cd-popup-container -->
+          </div> <!-- cd-popup -->
           <div class="inventory-item redapple"></div>
         </div>
         <div class="inventory-cell">
+          <div class="cd-popup" role="alert" id="popup4">
+            <div class="cd-popup-container">
+              <p>Are you sure you want to use this item4?</p>
+              <ul class="cd-buttons">
+                <li><a href="#0" id="yes4">Yes4</a></li>
+                <li><a href="#0" id="no4">No4</a></li>
+              </ul>
+              <a href="#0" class="cd-popup-close img-replace">Close</a>
+            </div> <!-- cd-popup-container -->
+          </div> <!-- cd-popup -->
           <div class="inventory-item bread"></div>
         </div>
         <div class="inventory-cell">
+          <div class="cd-popup" role="alert" id="popup5">
+            <div class="cd-popup-container">
+              <p>Are you sure you want to use this item5?</p>
+              <ul class="cd-buttons">
+                <li><a href="#0" id="yes5">Yes5</a></li>
+                <li><a href="#0" id="no5">No5</a></li>
+              </ul>
+              <a href="#0" class="cd-popup-close img-replace">Close</a>
+            </div> <!-- cd-popup-container -->
+          </div> <!-- cd-popup -->
           <div class="inventory-item beet"></div>
         </div>
         <div class="inventory-cell"></div>
