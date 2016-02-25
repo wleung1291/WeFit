@@ -20,11 +20,14 @@ function accept1(){
             // unlock achievement
             var count = incr(); // calls incr and stores count of number of dailies done
             console.log("incr: "+ count);
+
+            var str = "NEW ACHIEVEMENT!";
+            var result = str.fontcolor("green");
             if(count == 1){ 
-                $('p#info').html('Congrats, +50 \nLeg Experience points!\n\nNEW ACHIEVEMENT!').wrap('<pre />');
+                $('p#info').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
             }
             else if(count == 0){
-                $('p#info').html('Congrats, +50 \nLeg Experience points!\n\nNEW ACHIEVEMENT!').wrap('<pre />');
+                $('p#info').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
             }
             else{$('p#info').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
 
@@ -84,11 +87,14 @@ function accept2(){
 
             var count = incr();
             console.log("incr: "+ count);
+
+            var str = "NEW ACHIEVEMENT!";
+            var result = str.fontcolor("green");
             if(count == 1){
-                $('p#info2').html('Congrats, +50 \nLeg Experience points!\n\nNEW ACHIEVEMENT!').wrap('<pre />');
+                $('p#info2').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
             }
             else if(count == 0){
-                $('p#info2').html('Congrats, +50 \nLeg Experience points!\n\nNEW ACHIEVEMENT!').wrap('<pre />');
+                $('p#info2').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
             }
             else{$('p#info2').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
             
@@ -140,11 +146,14 @@ function accept3(){
 
             var count = incr(); // count of number of dailies done
             console.log("incr: "+ count);
+
+            var str = "NEW ACHIEVEMENT!";
+            var result = str.fontcolor("green");
             if(count == 1){ 
-                $('p#info3').html('Congrats, +50 \nLeg Experience points!\n\nNEW ACHIEVEMENT!').wrap('<pre />');
+                $('p#info3').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
             }
             else if(count == 0){
-                $('p#info3').html('Congrats, +50 \nLeg Experience points!\n\nNEW ACHIEVEMENT!').wrap('<pre />');
+                $('p#info3').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
             }
             else{$('p#info3').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
 
@@ -194,11 +203,14 @@ function accept4(){
 
             var count = incr();
             console.log("incr: "+ count);
+
+            var str = "NEW ACHIEVEMENT!";
+            var result = str.fontcolor("green");
             if(count == 1){
-                $('p#info4').html('Congrats, +50 \nLeg Experience points!\n\nNEW ACHIEVEMENT!').wrap('<pre />');
+                $('p#info4').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
             }
             else if(count == 0){
-                $('p#info4').html('Congrats, +50 \nLeg Experience points!\n\nNEW ACHIEVEMENT!').wrap('<pre />');
+                $('p#info4').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
             }
             else{$('p#info4').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
 
