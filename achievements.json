@@ -4,25 +4,22 @@
 			"number": "1",
 			"icon": "icon1",
 			"description": "Complete one daily challenge",
-			"button": "button1",
-			"bye": "bye1",
-			"donefunc": "done1()"
+			"button": "button1"
+
 		},
 		{
 			"number": "2",
 			"icon": "icon2",
 			"description": "Complete two daily challenges",
-			"button": "button2",
-			"bye": "bye2",
-			"donefunc": "done2()"
+			"button": "button2"
+
 		},
 		{
 			"number": "3",
 			"icon": "icon3",
 			"description": "Complete at least one daily challenge each day for two days",
-			"button": "button3",
-			"bye": "bye3",
-			"donefunc": "done3()"
+			"button": "button3"
+
 		}
 	]
 }
