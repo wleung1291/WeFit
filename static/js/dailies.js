@@ -75,7 +75,7 @@ if(sessionStorage.accept1){
     }
 
     $(".bye").hide(); // hide decline button
-    $('p#info').text('Congrats, +50 Leg Experience points!') // change <p>
+    $('p#info').text('Completed') // change <p>
     $("#accept").val("Done!"); // change input text to "Done!"
 
     //slide panel up
@@ -151,7 +151,7 @@ if(sessionStorage.accept2){
     }
 
     $(".bye2").hide();
-    $('p#info2').text('Congrats, +50 Leg Experience points!')
+    $('p#info2').text('Completed')
     $("#accept2").val("Done!");
 
     $("#accept2").click(function(){
@@ -222,7 +222,7 @@ if(sessionStorage.accept3){
     }
 
     $(".bye3").hide();
-    $('p#info3').text('Congrats, +50 Leg Experience points!')
+    $('p#info3').text('Completed')
     $("#accept3").val("Done!");
     $("#accept3").click(function(){
         $("#panel3").slideUp("slow");
@@ -291,7 +291,8 @@ if(sessionStorage.accept4){
     }
 
     $(".bye4").hide();
-    $('p#info4').text('Congrats, +50 Leg Experience points!')
+    $('p#info4').text('Completed')
+    //$('p#info4').text('Congrats, +50 Leg Experience points!')
     $("#accept4").val("Done!");
 
     $("#accept4").click(function(){
