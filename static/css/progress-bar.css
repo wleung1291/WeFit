@@ -1,0 +1,80 @@
+progress {
+    /* Turns off styling - not usually needed, but good to know. */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    display:inline-block;
+}
+
+/* Firefox */
+progress::-moz-progress-bar{
+    background-color: black;
+}
+
+progress::-webkit-progress-value{
+    background-color: black;
+}
+
+progress[value^="0"]::-webkit-progress-value,
+progress[value^="1"]::-webkit-progress-value,
+progress[value^="2"]::-webkit-progress-value{
+   background-color: red;
+} 
+
+
+progress[value^="0"]::-moz-progress-bar,
+progress[value^="1"]::-moz-progress-bar,
+progress[value^="2"]::-moz-progress-bar{
+   background-color: red;
+} 
+
+progress[value^="3"]::-webkit-progress-value,
+progress[value^="4"]::-webkit-progress-value,
+progress[value^="5"]::-webkit-progress-value,
+progress[value^="6"]::-webkit-progress-value{
+     background-color: yellow;
+}
+
+progress[value^="3"]::-moz-progress-bar,
+progress[value^="4"]::-moz-progress-bar,
+progress[value^="5"]::-moz-progress-bar,
+progress[value^="6"]::-moz-progress-bar{
+     background-color: yellow;
+}
+
+progress[value^="7"]::-moz-progress-bar,
+progress[value^="8"]::-moz-progress-bar{
+    background-color:green;
+}
+progress[value^="7"]::-webkit-progress-value,
+progress[value^="8"]::-webkit-progress-value{
+    background-color:green;
+}
+
+progress[value^="9"]::-moz-progress-bar,
+progress[value="100"]::-moz-progress-bar{
+    background-color:blue;
+}
+
+progress[value^="9"]::-webkit-progress-value,
+progress[value="100"]::-webkit-progress-value{
+    background-color:blue;
+}
+
+#hp {
+    height: 4%;
+}
+
+#health {
+    width: 70%;
+}
+
+#hp p {
+    color: white;
+}
+
+#petimg {
+    width:25px;
+    height:15px;
+    display: inline-block;
+}

@@ -14,9 +14,7 @@ html * {
   box-sizing: border-box;
 }
 
-body {
-  font-size: 100%;
-  font-family: "Lato", sans-serif;
+body{
   color: #8f9cb5;
   background-color: #ffd88f;
 }
