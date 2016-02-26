@@ -7,6 +7,9 @@ var incr = (function () {
     }
 })();
 
+// achievement string
+var str = "NEW ACHIEVEMENT!";
+var achievement = str.fontcolor("green");
 
 // changes after clicking accept 
 function accept1(){
@@ -20,18 +23,22 @@ function accept1(){
             // unlock achievement
             var count = incr(); // calls incr and stores count of number of dailies done
             console.log("incr: "+ count);
-
-            var str = "NEW ACHIEVEMENT!";
-            var result = str.fontcolor("green");
-            if(count == 1){ 
-                $('p#info').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
+            if(count == 3){ 
+                $('p#info').html('Congrats,\n+50 Leg Experience points!\n +1 Bread!\n\n').wrap('<pre />');
+            }
+            else if(count == 2){ 
+                $('p#info').html('Congrats,\n+50 Leg Experience points!\n +1 Red Apple!\n\n').wrap('<pre />');
+            }
+            else if(count == 1){ 
+                $('p#info').html('Congrats,\n+50 Leg Experience points!\n +1 Green Apple!\n\n' + achievement).wrap('<pre />');
             }
             else if(count == 0){
-                $('p#info').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
+                $('p#info').html('Congrats,\n+50 Leg Experience points!\n +1 Carrot!\n\n' + achievement).wrap('<pre />');
             }
-            else{$('p#info').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
+            //else{$('p#info').html('Congrats, +50 \nLeg Experience points!\n +1 Red Apple').wrap('<pre />');}
 
             sessionStorage.accept1 = true;
+           
             //click done
             $("#accept").click(function(){
                 $("#panel").slideUp("slow");
@@ -48,29 +55,38 @@ function accept1(){
 if(sessionStorage.accept1){
     // unlock achievement
     var count = incr(); // count of number of dailies done
+    if(count == 3){
+        $('.inventory-item.bread').show(); //show food in pets
+    }
+    if(count == 2){
+        $('.inventory-item.redapple').show();
+    }
     if(count == 1){
         $('#a2').css('color','black');
         $('#bye2').remove();
         $('#icon2').attr("src", "http://lostarmour.info/media/swords.png")
+        $('.inventory-item.greenapple').show();
     }
     if(count == 0){
         $('#a1').css('color','black');
         $('#bye1').remove();
         $('#icon1').attr("src", "http://blueandgoldonline.org/wp/wp-content/uploads/2013/10/Sword.png")
+        $('.inventory-item.carrot').show();
     }
 
-    $(".bye").hide();
-    $('p#info').text('Congrats, +50 Leg Experience points!')
-    $("#accept").val("Done!");
+    $(".bye").hide(); // hide decline button
+    $('p#info').text('Congrats, +50 Leg Experience points!') // change <p>
+    $("#accept").val("Done!"); // change input text to "Done!"
 
+    //slide panel up
     $("#accept").click(function(){
         $("#panel").slideUp("slow");
 
-        //toggle arrow
-        var _this = $("#togArr1");
-        var current = _this.attr("src");
-        var swap = _this.attr("src-swap");     
-        _this.attr('src', swap).attr("src-swap",current); 
+    //toggle arrow
+    var _this = $("#togArr1");
+    var current = _this.attr("src");
+    var swap = _this.attr("src-swap");     
+    _this.attr('src', swap).attr("src-swap",current); 
     });
 }
 
@@ -88,15 +104,19 @@ function accept2(){
             var count = incr();
             console.log("incr: "+ count);
 
-            var str = "NEW ACHIEVEMENT!";
-            var result = str.fontcolor("green");
-            if(count == 1){
-                $('p#info2').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
+            if(count == 3){ 
+                $('p#info2').html('Congrats,\n+50 Leg Experience points!\n +1 Bread!\n\n').wrap('<pre />');
+            }
+            else if(count == 2){ 
+                $('p#info2').html('Congrats,\n+50 Leg Experience points!\n +1 Red Apple!\n\n').wrap('<pre />');
+            }
+            else if(count == 1){ 
+                $('p#info2').html('Congrats,\n+50 Leg Experience points!\n +1 Green Apple!\n\n' + achievement).wrap('<pre />');
             }
             else if(count == 0){
-                $('p#info2').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
+                $('p#info2').html('Congrats,\n+50 Leg Experience points!\n +1 Carrot!\n\n' + achievement).wrap('<pre />');
             }
-            else{$('p#info2').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
+            //else{$('p#info2').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
             
             sessionStorage.accept2 = true;
             $("#accept2").click(function(){
@@ -111,15 +131,23 @@ function accept2(){
 }
 if(sessionStorage.accept2){
     var count = incr();
+    if(count == 3){
+        $('.inventory-item.bread').show(); //show food in pets
+    }
+    if(count == 2){
+        $('.inventory-item.redapple').show();
+    }
     if(count == 1){
         $('#a2').css('color','black');
         $('#bye2').remove();
-        $('#icon2').attr("src", "http://lostarmour.info/media/swords.png")
+        $('#icon2').attr("src", "http://lostarmour.info/media/swords.png");
+        $('.inventory-item.greenapple').show();
     }
     if(count == 0){
         $('#a1').css('color','black');
         $('#bye1').remove();
-        $('#icon1').attr("src", "http://blueandgoldonline.org/wp/wp-content/uploads/2013/10/Sword.png")
+        $('#icon1').attr("src", "http://blueandgoldonline.org/wp/wp-content/uploads/2013/10/Sword.png");
+        $('.inventory-item.carrot').show();
     }
 
     $(".bye2").hide();
@@ -147,15 +175,19 @@ function accept3(){
             var count = incr(); // count of number of dailies done
             console.log("incr: "+ count);
 
-            var str = "NEW ACHIEVEMENT!";
-            var result = str.fontcolor("green");
-            if(count == 1){ 
-                $('p#info3').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
+            if(count == 3){ 
+                $('p#info3').html('Congrats,\n+50 Leg Experience points!\n +1 Bread!\n\n').wrap('<pre />');
+            }
+            else if(count == 2){ 
+                $('p#info3').html('Congrats,\n+50 Leg Experience points!\n +1 Red Apple!\n\n').wrap('<pre />');
+            }
+            else if(count == 1){ 
+                $('p#info3').html('Congrats,\n+50 Leg Experience points!\n +1 Green Apple!\n\n' + achievement).wrap('<pre />');
             }
             else if(count == 0){
-                $('p#info3').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
+                $('p#info3').html('Congrats,\n+50 Leg Experience points!\n +1 Carrot!\n\n' + achievement).wrap('<pre />');
             }
-            else{$('p#info3').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
+            //else{$('p#info3').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
 
             sessionStorage.accept3 = true;
             $("#accept3").click(function(){
@@ -170,15 +202,23 @@ function accept3(){
 }
 if(sessionStorage.accept3){
     var count = incr(); 
-        if(count == 1){ 
+    if(count == 3){
+        $('.inventory-item.bread').show(); //show food in pets
+    }
+    if(count == 2){
+        $('.inventory-item.redapple').show();
+    }
+    if(count == 1){ 
         $('#a2').css('color','black');
         $('#bye2').remove();
-        $('#icon2').attr("src", "http://lostarmour.info/media/swords.png")
+        $('#icon2').attr("src", "http://lostarmour.info/media/swords.png");
+        $('.inventory-item.greenapple').show();
     }
     if(count == 0){
         $('#a1').css('color','black');
         $('#bye1').remove();
         $('#icon1').attr("src", "http://blueandgoldonline.org/wp/wp-content/uploads/2013/10/Sword.png");
+        $('.inventory-item.carrot').show();
     }
 
     $(".bye3").hide();
@@ -204,15 +244,19 @@ function accept4(){
             var count = incr();
             console.log("incr: "+ count);
 
-            var str = "NEW ACHIEVEMENT!";
-            var result = str.fontcolor("green");
-            if(count == 1){
-                $('p#info4').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
+            if(count == 3){ 
+                $('p#info4').html('Congrats,\n+50 Leg Experience points!\n +1 Bread!\n\n').wrap('<pre />');
+            }
+            else if(count == 2){ 
+                $('p#info4').html('Congrats,\n+50 Leg Experience points!\n +1 Red Apple!\n\n').wrap('<pre />');
+            }
+            else if(count == 1){ 
+                $('p#info4').html('Congrats,\n+50 Leg Experience points!\n +1 Green Apple!\n\n' + achievement).wrap('<pre />');
             }
             else if(count == 0){
-                $('p#info4').html('Congrats, +50 \nLeg Experience points!\n\n' + result).wrap('<pre />');
+                $('p#info4').html('Congrats,\n+50 Leg Experience points!\n +1 Carrot!\n\n' + achievement).wrap('<pre />');
             }
-            else{$('p#info4').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
+            //else{$('p#info4').html('Congrats, +50 \nLeg Experience points!').wrap('<pre />');}
 
             sessionStorage.accept4 = true;
             $("#accept4").click(function(){
@@ -227,15 +271,23 @@ function accept4(){
 }
 if(sessionStorage.accept4){
     var count = incr();
+    if(count == 3){
+        $('.inventory-item.bread').show(); //show food in pets
+    }
+    if(count == 2){
+        $('.inventory-item.redapple').show();
+    }
     if(count == 1){ 
         $('#a2').css('color','black');
         $('#bye2').remove();
-        $('#icon2').attr("src", "http://lostarmour.info/media/swords.png")
+        $('#icon2').attr("src", "http://lostarmour.info/media/swords.png");
+        $('.inventory-item.greenapple').show();
     }
     if(count == 0){
         $('#a1').css('color','black');
         $('#bye1').remove();
         $('#icon1').attr("src", "http://blueandgoldonline.org/wp/wp-content/uploads/2013/10/Sword.png");
+        $('.inventory-item.carrot').show();
     }
 
     $(".bye4").hide();

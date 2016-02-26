@@ -10,11 +10,11 @@
 		},
 		{
 			"question": "What are the achievements?",
-			"answer": "The achievements are goals we want the user to reach."
+			"answer": "The achievements are goals we want the user to accomplish."
 		},
 		{
-			"question": "What is the inventory?",
-			"answer": "The inventory consists of items/avatars the user has earned from completing challenges."
+			"question": "What is a pet?",
+			"answer": "The pet ."
 		}
 	]
 }
