@@ -21,6 +21,7 @@ var homepage = require('./routes/homepage');
 var inventory = require('./routes/inventory');
 var login = require('./routes/login');
 var profile = require('./routes/profile');
+var profile2 = require('./routes/profile2');
 
 var app = express();
 
@@ -58,6 +59,7 @@ app.get('/dailies', dailies.view);
 app.get('/achievements', achievements.view);
 app.get('/inventory', inventory.view);
 app.get('/login', login.view);
+app.get('/profile2', profile2.view);
 
 
 http.createServer(app).listen(app.get('port'), function(){

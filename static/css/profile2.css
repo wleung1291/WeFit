@@ -1,0 +1,18 @@
+/** dropdown panels **/
+#panel, #slide, 
+#panel2, #slide2, 
+#panel3, #slide3, 
+#panel4, #slide4,
+#panel5, #slide5,
+#panel6, #slide6 {
+  text-align: center;
+}
+
+#panel, #panel2, #panel3, #panel4, #panel5, #panel6 {
+  padding: 10px;
+  padding-bottom: 15px;
+  display: none;
+  background-color: #00a087;
+  border-radius:25px;
+}
+
