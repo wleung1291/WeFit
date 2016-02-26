@@ -9,12 +9,20 @@
 			"answer": "Yes, you may accept a challenge until you finish it."
 		},
 		{
-			"question": "What are the achievements?",
+			"question": "What are achievements?",
 			"answer": "The achievements are goals we want the user to accomplish."
 		},
 		{
 			"question": "What is a pet?",
-			"answer": "The pet ."
+			"answer": "The pet is your companion that you need to take care of."
+		},
+		{
+			"question": "How do I get food to feed my pet?",
+			"answer": "Complete the daily challenges to get food for your pet as well as experience."
+		},
+		{
+			"question": "What happens if my pets HP reaches 0?",
+			"answer": "Game Over. Everything is reset, and you start from level 1 again."
 		}
 	]
 }

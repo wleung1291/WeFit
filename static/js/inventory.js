@@ -8,11 +8,6 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-$(".inventory-item.carrot").hide();
-$(".inventory-item.greenapple").hide();
-$(".inventory-item.redapple").hide();
-$(".inventory-item.bread").hide();
-$(".inventory-item.beet").hide();
 
 	//close popup
 	$('.cd-popup').on('click', function(event){
@@ -29,6 +24,13 @@ $(".inventory-item.beet").hide();
 	    }
     });
 }
+
+
+$(".inventory-item.carrot").hide();
+$(".inventory-item.greenapple").hide();
+$(".inventory-item.redapple").hide();
+$(".inventory-item.bread").hide();
+$(".inventory-item.beet").hide();
 
 $(".inventory-item.carrot").click(function(){
 	event.preventDefault();
