@@ -29,6 +29,7 @@ $(".inventory-item.redapple").hide();
 $(".inventory-item.bread").hide();
 $(".inventory-item.beet").hide();
 
+
 $(".inventory-item.carrot").click(function(){
 	event.preventDefault();
 	var oldHP = document.getElementById("health").value;
