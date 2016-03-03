@@ -2,6 +2,45 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
     initializePage();
+    var clicked = false;
+    var firstTime = true;
+    console.log("firstTime: " + firstTime);
+    $("#slide").click(function(){
+        $("#panel").slideToggle("slow");
+        clicked = true;
+        exerciseiconclicked(clicked, firstTime);
+        firstTime = false;
+    });
+    $("#slide2").click(function(){
+        $("#panel2").slideToggle("slow");
+        clicked = true;
+        exerciseiconclicked(clicked, firstTime);
+        firstTime = false;
+    });
+    $("#slide3").click(function(){
+        $("#panel3").slideToggle("slow");
+        clicked = true;
+        exerciseiconclicked(clicked, firstTime);
+        firstTime = false;
+    });
+    $("#slide4").click(function(){
+        $("#panel4").slideToggle("slow");
+        clicked = true;
+        exerciseiconclicked(clicked, firstTime);
+        firstTime = false;
+    });
+    $("#slide5").click(function(){
+        $("#panel5").slideToggle("slow");
+        clicked = true;
+        exerciseiconclicked(clicked, firstTime);
+        firstTime = false;
+    });
+    $("#slide6").click(function(){
+        $("#panel6").slideToggle("slow");
+        clicked = true;
+        exerciseiconclicked(clicked, firstTime);
+        firstTime = false;
+    });
 })
 
 /*
@@ -54,30 +93,10 @@ function initializePage() {
     }
 }
 
-/** slide toggle **/
-$(document).ready(function(){
-    $("#slide").click(function(){
-        $("#panel").slideToggle("slow");
-        ga('send','event','exerciseicon','click');
-    });
-    $("#slide2").click(function(){
-        $("#panel2").slideToggle("slow");
-        ga('send','event','exerciseicon','click');
-    });
-    $("#slide3").click(function(){
-        $("#panel3").slideToggle("slow");
-        ga('send','event','exerciseicon','click');
-    });
-    $("#slide4").click(function(){
-        $("#panel4").slideToggle("slow");
-        ga('send','event','exerciseicon','click');
-    });
-    $("#slide5").click(function(){
-        $("#panel5").slideToggle("slow");
-        ga('send','event','exerciseicon','click');
-    });
-    $("#slide6").click(function(){
-        $("#panel6").slideToggle("slow");
-        ga('send','event','exerciseicon','click');
-    });
-});
+function exerciseiconclicked(clicked, firstTime) {
+    if (clicked == true && firstTime == true){
+        ga('send','event','exercise','click');
+        firstTime = false;
+        console.log("clicked on this shit");
+    }
+}
