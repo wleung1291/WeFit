@@ -95,7 +95,7 @@ function initializePage() {
 
 function exerciseiconclicked(clicked, firstTime) {
     if (clicked == true && firstTime == true){
-        ga('send','event','exercise','click');
+        ga('send','event','exerciseicon','click');
         firstTime = false;
         console.log("clicked on this shit");
     }
