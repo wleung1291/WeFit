@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Profile</title>  
+  <title>Dailies</title>  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -9,12 +9,14 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/fixed-navigation-bar.css">
   <link rel="stylesheet" href="css/progress-bar.css">
-  <link rel="stylesheet" href="css/profile2.css">
+  <link rel="stylesheet" href="css/dailiespage.css">
+    <link rel="stylesheet" href="css/achievements.css">
 </head>
 <body>
   <nav class="fixed-nav-bar">
     <div id="menu" class="menu">
       <a class="sitename" href="profile2">WeFit</a>
+      <!-- Example responsive navigation menu  -->
       <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
       <ul class="menu-items">
         <li><a href="profile2">Profile</a></li>
@@ -23,44 +25,41 @@
         <li><a href="achievements2">Achievements</a></li>
         <li><a href="faq2">Help</a></li>
         <li><a href="/2">Log Out</a></li>
-    </ul>
+      </ul>
     </div>
   </nav>
+  <!-- this is a comment in HTML -->
   <div class="container">
-    <h1 align="center">Profile</h1>
-    <div class = "profile">
-      <table align = "center">
-        <tr>  
-          {{#each user}}
-          <td align="center"><img src = "{{userPic}}"></td>
-          <td><p id = "name"> {{name}} </br> Lvl {{lvl}} </p></td>
-          {{/each}}
-        </tr>
-       </table>
-        <div id="hp" align="right">
-          <p><img id="petimg" src="images/green_blob.png"/>Pet HP: <progress align="left" id="health" value="60" max="100"></progress></p>
-        </div>            
-    </div>
-    <div class="progress">
-      <table align="center">
-        {{#each section}}
-        <tr id="{{slide}}">
-          <td align="center" class="exerciseicon2"><img src = "{{img}}"></td>  
-          <td class="lvl"><p>{{exercise}} - Level {{level}}</br> <progress value="{{experience}}" min="0" max="100"></progress></p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" id="{{panel}}" class="workout"><p align="center">{{exercise}} Workouts:<br>{{workouts}}</p></td>
-        </tr>
-        {{/each}}
-      </table>
+    <h1 align="center">Dailies</h1>
+    <div class="dailies">
+      
+      {{#each exercises}}
+      <ul>
+        <li id ="{{slide}}" >
+          <img class="exericon" src="{{image}}"
+          >
+          <h3>{{exercise}}</h3>
+          <p>{{description}} </p>
+          <br>
+        
+          <img id = "{{togArr}}" src="../images/down-arrow-icon.png" src-swap='../images/up-arrow-icon.png'>
+        
+        </li>          
+        <div id="{{panel}}">
+          <p id = "{{info}}"> {{set}} <br>{{experience}} </p><br>
+          <input type="button" value = "{{Accept}}" id = "{{accept}}" onclick ="{{acceptfunc}}"></input>
+          <input type="button" value = "{{Decline}}" class = "{{bye}}" id = "{{decline}}" onclick="{{declinefunc}}"></input>         
+        </div>
+         <hr>   
+      </ul>
+      {{/each}}
     </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/dailies.js"></script>
   <script src="js/jquery-1.11.0.js"></script>
   <script src="/js/bootstrap.js"></script> 
-  <script src="js/profile2.js"></script>
-{{> googleAnalytics}}
+  {{> googleAnalytics}}
 </body>
 </html>
