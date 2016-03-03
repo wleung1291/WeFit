@@ -8,7 +8,7 @@
 	],
 	"section": [
 		{
-			"img": "http://shrani.si/f/3i/kB/4hPjiMY7/fd47cf329582b6e5da92b8cc.jpg",
+			"img": "images/BodyParts/Chest Filled.png",
 			"exercise": "Chest",
 			"level":"50",
 			"experience": "90",
@@ -17,7 +17,7 @@
 			"workouts": "Push Ups, Single Leg Push Ups, Wide Push Ups, Staggered Hand Push Ups, Tricep Push Ups, Side Push Ups"
 		},
 		{
-			"img": "http://supplements.bodybuildingtips-list.com/wp-content/uploads/2015/05/Bent-over-lateral-raise-shoulder-exercise.png",
+			"img": "images/BodyParts/Shoulders Filled.png",
 			"exercise": "Shoulders",
 			"level":"45",
 			"experience": "10",
@@ -26,7 +26,7 @@
 			"workouts": "Push Ups, Single Arm Plank, Pike Press, Hand Stand Push Ups, Seated Front Deltoid"	
 		},
 		{
-			"img": "https://lifefitnessbydane.files.wordpress.com/2014/06/shutterstock119687548copy.jpg",
+			"img": "images/BodyParts/Flex Biceps Filled.png",
 			"exercise": "Arms",
 			"level":"50",
 			"experience": "25",
@@ -35,7 +35,7 @@
 			"workouts": "Tricep Dips, Push Ups, Pull Ups, Bicep Curls, Tricep Kickbacks"
 		},
 		{
-			"img": "https://s-media-cache-ak0.pinimg.com/736x/e3/f6/3f/e3f63fb74c17024a8fa0071dd5036348.jpg",
+			"img": "images/BodyParts/Back Muscles Filled.png",
 			"exercise": "Back",
 			"level":"47",
 			"experience": "70",
@@ -44,7 +44,7 @@
 			"workouts": "Back Bows, Russian Twist, Pilates, Swimmers, Row Downs, Kneeling Superman, Reverse Fly"
 		},
 		{
-			"img": "https://s-media-cache-ak0.pinimg.com/236x/52/3f/30/523f302698f28c2b30f4c48533223a9b.jpg",
+			"img": "images/BodyParts/Prelum Filled.png",
 			"exercise": "Abdominal",
 			"level":"43",
 			"experience": "50",
@@ -53,7 +53,7 @@
 			"workouts": "Sit Ups, Crunches, Side Bends, Decline Oblique Crunches, Air Bike, Plank, Ab Roller, Leg Raises"
 		},
 		{
-			"img": "http://peakfatlossandfitness.com/uploads/3/2/0/6/3206724/2573594_orig.jpg",
+			"img": "images/BodyParts/Leg Filled.png",
 			"exercise": "Legs",
 			"level":"40",
 			"experience": "40",

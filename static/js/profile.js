@@ -53,3 +53,32 @@ function initializePage() {
 		else{ document.getElementById("health").value += 10;}
 	}
 }
+
+
+/** slide toggle **/
+$(document).ready(function(){
+    $("#slide").click(function(){
+        $("#panel").slideToggle("slow");
+        ga('send','event','exerciseicon','click');
+    });
+    $("#slide2").click(function(){
+        $("#panel2").slideToggle("slow");
+        ga('send','event','exerciseicon','click');
+    });
+    $("#slide3").click(function(){
+        $("#panel3").slideToggle("slow");
+        ga('send','event','exerciseicon','click');
+    });
+    $("#slide4").click(function(){
+        $("#panel4").slideToggle("slow");
+        ga('send','event','exerciseicon','click');
+    });
+    $("#slide5").click(function(){
+        $("#panel5").slideToggle("slow");
+        ga('send','event','exerciseicon','click');
+    });
+    $("#slide6").click(function(){
+        $("#panel6").slideToggle("slow");
+        ga('send','event','exerciseicon','click');
+    });
+});

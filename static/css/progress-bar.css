@@ -63,6 +63,11 @@ progress[value="100"]::-webkit-progress-value{
 
 #hp {
     height: 4%;
+    border-style: solid;
+    border: 3px;
+    border-radius: 0px 0px 15px 15px;
+    border-color: #00a087;
+    background-color: #00a087;
 }
 
 #health {
@@ -70,11 +75,12 @@ progress[value="100"]::-webkit-progress-value{
 }
 
 #hp p {
-    color: white;
+    padding-top: 1%;
+    color: #F7F7F7;
 }
 
 #petimg {
     width:25px;
-    height:15px;
+    height:17px;
     display: inline-block;
 }

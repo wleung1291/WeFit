@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/fixed-navigation-bar.css">
   <link rel="stylesheet" href="css/progress-bar.css">
+  <link rel="stylesheet" href="css/profile2.css">  
 </head>
 <body>
   <nav class="fixed-nav-bar">
@@ -36,10 +37,12 @@
           {{/each}}
         </tr>
        </table>     
-    </div>
-    <div id="hp" align="right">
-      <p><img id="petimg" src="images/green_blob.png"/>Pet HP: <progress align="left" id="health" value="60" max="100"></progress></p>
-    </div>
+      <div id="hp" align="right">
+        <p><img id="petimg" src="images/green_blob.png"/>Pet HP: <progress align="left" id="health" value="60" max="100"></progress></p>
+      </div>
+    </div> 
+    
+    <!--
     <div class = "progress">
       <table align="center">
         {{#each section}}
@@ -47,6 +50,20 @@
           <td align="center" class="exerciseicon"><img src = "{{img}}"></td>  
           <td class="lvl"><p>{{exercise}} - Level {{level}}</br> <progress value="{{experience}}" min="0" max="100"></progress></p>
           </td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>-->
+    <div class="progress">
+      <table align="center">
+        {{#each section}}
+        <tr id="{{slide}}">
+          <td align="center" class="exerciseicon"><img src = "{{img}}"></td>  
+          <td class="lvl"><p>{{exercise}} - Level {{level}}</br> <progress value="{{experience}}" min="0" max="100"></progress></p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" id="{{panel}}" class="workout"><p align="center">{{exercise}} Workouts:<br>{{workouts}}</p></td>
         </tr>
         {{/each}}
       </table>
@@ -63,8 +80,9 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-73969915-1', 'auto');
+  ga('create', 'UA-74642049-1', 'auto');
   ga('send', 'pageview');
+
   </script>
 </body>
 </html>
