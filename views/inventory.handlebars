@@ -24,7 +24,7 @@
         <li><a href="inventory">Pet</a></li>
         <li><a href="achievements">Achievements</a></li>
         <li><a href="faq">Help</a></li>
-        <li><a href="/">Log Out</a></li>
+        <li><a id="logoutbutton" href="/">Log Out</a></li>
     </ul>
     </div>
   </nav>
@@ -32,7 +32,7 @@
     <h1 align="center">Pet</h1>
     <div id="pet">
       <img id="bg" src="images/room.jpg"/>
-      <img id="petimg" src="images/green_blob.png"/>
+      <img id="petimg" src="images/Machoke.gif"/>
     </div>
     <div align="right" id="hp">
       <p>Pet HP: <progress align="left" id="health" value="60" max="100"></progress></p>
@@ -178,7 +178,8 @@
   <script src="js/bootstrap.js"></script> 
   <script src="js/inventory.js"></script>
   <script src="js/dailies.js"></script>
-  {{> googleAnalytics}}
+  <script src="js/logout.js"></script>
+  <!--{{> googleAnalytics}}-->
 
 </body>
 </html>
