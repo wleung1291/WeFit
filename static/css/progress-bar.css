@@ -62,7 +62,7 @@ progress[value="100"]::-webkit-progress-value{
 }
 
 #hp {
-    height: 4%;
+    height: 6%;
     border-style: solid;
     border: 3px;
     border-radius: 0px 0px 15px 15px;
