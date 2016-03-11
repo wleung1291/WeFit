@@ -10,7 +10,7 @@
 		{
 			"img": "images/BodyParts/Chest Filled.png",
 			"exercise": "Chest",
-			"level":"50",
+			"level":"17",
 			"experience": "90",
 			"slide": "slide",
 			"panel": "panel",
@@ -19,8 +19,8 @@
 		{
 			"img": "images/BodyParts/Shoulders Filled.png",
 			"exercise": "Shoulders",
-			"level":"45",
-			"experience": "10",
+			"level":"16",
+			"experience": "18",
 			"slide": "slide2",
 			"panel": "panel2",
 			"workouts": "Push Ups, Single Arm Plank, Pike Press, Hand Stand Push Ups, Seated Front Deltoid"	
@@ -28,7 +28,7 @@
 		{
 			"img": "images/BodyParts/Flex Biceps Filled.png",
 			"exercise": "Arms",
-			"level":"50",
+			"level":"17",
 			"experience": "25",
 			"slide": "slide3",
 			"panel": "panel3",
@@ -37,7 +37,7 @@
 		{
 			"img": "images/BodyParts/Back Muscles Filled.png",
 			"exercise": "Back",
-			"level":"47",
+			"level":"16",
 			"experience": "70",
 			"slide": "slide4",
 			"panel": "panel4",
@@ -46,7 +46,7 @@
 		{
 			"img": "images/BodyParts/Prelum Filled.png",
 			"exercise": "Abdominal",
-			"level":"43",
+			"level":"15",
 			"experience": "50",
 			"slide": "slide5",
 			"panel": "panel5",
@@ -55,7 +55,7 @@
 		{
 			"img": "images/BodyParts/Leg Filled.png",
 			"exercise": "Legs",
-			"level":"40",
+			"level":"13",
 			"experience": "40",
 			"slide": "slide6",
 			"panel": "panel6",

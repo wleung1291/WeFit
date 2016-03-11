@@ -60,3 +60,5 @@ var count = 0;
     }
 
 
+document.getElementById("icon4").src="http://mymoneymychoices.com/wp-content/uploads/2013/10/badge_10.png";
+$('#a4').css('color','black');

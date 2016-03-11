@@ -2,13 +2,13 @@
 	font-size: 18px;
 }
 
-#a1, #a2, #a3 {
+#a1, #a2, #a3, #a4 {
 	color: red;
 	font-weight: bold;
 
 }
 
-#icon1, #icon2, #icon3 {
+#icon1, #icon2, #icon3, #icon4 {
 	position: relative;
 	padding-left: 20%;
 }

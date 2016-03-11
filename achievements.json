@@ -20,6 +20,41 @@
 			"description": "Complete at least one daily challenge each day for two days",
 			"button": "button3"
 
+		},
+		{
+			"number": "4",
+			"icon": "icon4",
+			"description": "Reach an overall level of 10.",
+			"button": "button3"
+
+		},
+		{
+			"number": "3",
+			"icon": "icon3",
+			"description": "Reach an overall level of 20.",
+			"button": "button3"
+
+		},
+		{
+			"number": "3",
+			"icon": "icon3",
+			"description": "Reach an overall level of 30.",
+			"button": "button3"
+
+		},
+		{
+			"number": "3",
+			"icon": "icon3",
+			"description": "Reach an overall level of 40",
+			"button": "button3"
+
+		},
+		{
+			"number": "3",
+			"icon": "icon3",
+			"description": "Reach an overall level of 50",
+			"button": "button3"
+
 		}
 	]
 }
